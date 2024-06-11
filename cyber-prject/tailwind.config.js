@@ -13,10 +13,6 @@ module.exports = {
       boxShadow: {
         custom: "15px 15px 35px black",
       },
-      background: {
-        "#EDEDED": "#EDEDED",
-        "#353535": "#353535",
-      },
     },
   },
   plugins: [],
