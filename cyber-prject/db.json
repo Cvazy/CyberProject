@@ -1,0 +1,30 @@
+{
+  "mainBanners": [
+    {
+      "title": "Pro.Beyond.",
+      "model": "IPhone 14",
+      "version": "Pro",
+      "subtitle": "Created to change everything for the better. For everyone",
+      "productId": "020",
+      "imagePath": "https://i.ibb.co/RNtgdnz/iphone-banner.png"
+    },
+
+    {
+      "title": "Pro.Beyond.",
+      "model": "MacBook",
+      "version": "Pro",
+      "subtitle": "It will be an excellent tool for real professionals",
+      "productId": "030",
+      "imagePath": "https://i.ibb.co/XpzVtWS/MacBook.png"
+    },
+
+    {
+      "title": "Pro.Beyond.",
+      "model": "AirPods",
+      "version": "Max",
+      "subtitle": "Incredible sound, immersing in a completely new reality",
+      "productId": "040",
+      "imagePath": "https://i.ibb.co/wSkbsp7/airpods-max.png"
+    }
+  ]
+}

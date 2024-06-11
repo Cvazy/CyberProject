@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  transition: .3s all;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+*::selection {
+  background: #DFDFDF;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+@layer components {
+  .nav_link {
+    @apply text-nowrap font-medium text-base
+  }
+
+  .active_nav_link {
+    @apply text-black
+  }
+
+  .inactive_nav_link {
+    @apply text-[#B2B2B2] hover:text-black
+  }
+
+  .main_button {
+    @apply rounded-lg text-center align-middle font-medium border border-solid
+  }
+}
+
+.swiper-pagination-bullet {
+  @apply !w-[30px] !h-[7px] !rounded-md !bg-[#e7e7e7]
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white
+}
+
+.swiper-slide {
+  @apply self-center
+}
+
+.swiper-pagination {
+  @apply !bottom-4
+}
