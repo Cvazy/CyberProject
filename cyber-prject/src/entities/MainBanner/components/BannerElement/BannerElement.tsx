@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "shared/ui";
 import { useTranslation } from "react-i18next";
-import { FC } from "react";
+import { FC, useState } from "react";
+import { LoaderTwister } from "../../../../shared/ui/Loader/LoaderTwister";
 
 type BannerElementProps = {
   title: string;
@@ -21,11 +22,16 @@ export const BannerElement: FC<BannerElementProps> = ({
   imagePath,
 }) => {
   const { t } = useTranslation("mainPage");
+  const [isImageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   return (
     <div
       className={
-        "flex flex-col items-center justify-between gap-12 w-full pt-[88px] lg:flex-row"
+        "flex flex-col items-center justify-between gap-12 w-full pt-[88px] lg:pt-[108px] lg:flex-row"
       }
     >
       <div className={"flex flex-col items-center gap-6 lg:items-start"}>
@@ -71,9 +77,16 @@ export const BannerElement: FC<BannerElementProps> = ({
         }
       >
         <div className={"relative w-full"}>
+          {!isImageLoaded && (
+            <div className={"h-[380px] md:h-[632px]"}>
+              <LoaderTwister />
+            </div>
+          )}
           <img
+            style={isImageLoaded ? {} : { display: "none" }}
             className={"w-full"}
             src={imagePath}
+            onLoad={handleImageLoad}
             loading={"lazy"}
             draggable={"false"}
             alt={title}

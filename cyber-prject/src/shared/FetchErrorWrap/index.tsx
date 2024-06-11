@@ -1,5 +1,4 @@
 import { FC, ReactNode } from "react";
-import { Loader } from "../ui";
 import { useTranslation } from "react-i18next";
 import { LoaderTwister } from "../ui/Loader/LoaderTwister";
 
@@ -20,7 +19,7 @@ export const FetchErrorWrap: FC<FetchErrorWrapProps> = ({
     <>
       {isLoading && <LoaderTwister />}
       {error && (
-        <div className={"bg-[#DFDFDF] w-full h-full"}>
+        <div className={"bg-[#DFDFDF] w-full h-full min-h-96"}>
           <div className={"flex items-center justify-center w-full h-full"}>
             <p
               className={

@@ -10,6 +10,13 @@ module.exports = {
         48: "3rem", // 48px
         56: "3.5rem", // 56px
       },
+      boxShadow: {
+        custom: "15px 15px 35px black",
+      },
+      background: {
+        "#EDEDED": "#EDEDED",
+        "#353535": "#353535",
+      },
     },
   },
   plugins: [],

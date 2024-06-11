@@ -26,5 +26,59 @@
       "productId": "040",
       "imagePath": "https://i.ibb.co/wSkbsp7/airpods-max.png"
     }
+  ],
+  "smallBanners": [
+    {
+      "bgColor": "bg-[#fff]",
+      "hoverEffect": true,
+      "titleClass": "lg:font-medium lg:text-4xl 2xl:text-5xl",
+      "subtitleClass": "font-medium",
+      "imageSize": "max-w-[330px] max-h-[377px]",
+      "smallBanner": {
+        "title": "Playstation",
+        "subtitle": "5",
+        "description": "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
+        "imageSrc": "https://i.ibb.co/NTWTJ4r/Play-Station.png"
+      }
+    },
+    {
+      "bgColor": "bg-[#EDEDED]",
+      "hoverEffect": true,
+      "titleClass": "lg:text-xl xl:text-2xl 2xl:text-3xl",
+      "subtitleClass": "font-medium lg:block",
+      "imageSize": "max-w-[245px] max-h-[272px]",
+      "smallBanner": {
+        "title": "Apple AirPods",
+        "subtitle": "Max",
+        "description": "Computational audio. Listen, it's powerful.",
+        "imageSrc": "https://i.ibb.co/DpRnZJc/Airpods-Max.png"
+      }
+    },
+    {
+      "bgColor": "bg-[#353535]",
+      "hoverEffect": true,
+      "titleClass": "text-white lg:text-xl xl:text-2xl 2xl:text-3xl",
+      "subtitleClass": "font-medium",
+      "imageSize": "max-w-[330px] max-h-[190px]",
+      "smallBanner": {
+        "title": "Apple Vision",
+        "subtitle": "Pro",
+        "description": "An immersive way to experience entertainment",
+        "imageSrc": "https://i.ibb.co/h72XTWJ/Apple-Vision.png"
+      }
+    },
+    {
+      "bgColor": "bg-[#EDEDED]",
+      "hoverEffect": false,
+      "titleClass": "lg:text-5xl xl:text-6xl 2xl:text-[64px]",
+      "subtitleClass": "font-medium",
+      "imageSize": "max-h-[502px] max-w-[830px]",
+      "smallBanner": {
+        "title": "Macbook",
+        "subtitle": "Air",
+        "description": "The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.",
+        "imageSrc": "https://i.ibb.co/5sC6XzJ/MacBook.png"
+      }
+    }
   ]
 }
