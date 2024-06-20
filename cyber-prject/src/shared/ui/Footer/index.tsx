@@ -25,7 +25,7 @@ export const Footer = () => {
                 >
                   <Link to={"/"}>
                     <img
-                      className={"block hover:scale-110"}
+                      className={"block select-none hover:scale-110"}
                       src={logoLight}
                       alt={"Logotype"}
                       loading={"lazy"}

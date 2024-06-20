@@ -1,17 +1,20 @@
-import React, { Suspense, /*useEffect,*/ useState } from "react";
+import React, { Suspense, useEffect, /*useEffect,*/ useState } from "react";
 import { Header, MobileMenu, Footer, Loader } from "shared/ui";
 import AppRouter from "./providers/Routers/ui/AppRouter";
+import { useAppDispatch } from "./providers/StoreProvider/hooks";
+import { userActions } from "../entities/User";
 
 const Shop = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const dispatch = useAppDispatch();
 
   const onVisibleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
 
-  // useEffect(() => {
-  //   if (Math.random() > 0.5) throw new Error();
-  // }, []);
+  useEffect(() => {
+    dispatch(userActions.initAuthData());
+  }, [dispatch]);
 
   return (
     <Suspense fallback={<Loader />}>

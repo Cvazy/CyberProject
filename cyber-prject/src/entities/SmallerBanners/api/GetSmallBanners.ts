@@ -1,13 +1,14 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { SmallBannersTypes } from "../model/types";
+import { serverUrl } from "app/constants";
 
 export const GetSmallBanners = createAsyncThunk(
   "SmallBanners/GetSmallBanners",
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get<SmallBannersTypes[]>(
-        "http://localhost:8080/smallBanners",
+        `${serverUrl}/smallBanners`,
       );
 
       return response.data;

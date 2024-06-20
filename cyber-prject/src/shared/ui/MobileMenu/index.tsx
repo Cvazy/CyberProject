@@ -1,4 +1,4 @@
-import { SearchingWithIcon } from "../SearchingWithIcon";
+import { Input } from "../Input";
 import { Link } from "react-router-dom";
 import wishlistIcon from "shared/assets/images/Icon/wishlist.svg";
 import cartIcon from "shared/assets/images/Icon/cart.svg";
@@ -20,10 +20,14 @@ export const MobileMenu = ({ mobileMenuVisible }: MobileMenuProps) => {
     >
       <div className={"pt-[104px] pb-6 px-4 w-full"}>
         <div className={"flex flex-col items-start gap-6 w-full"}>
-          <SearchingWithIcon
-            className={"py-[19px] h-[56px]"}
-            paddingForIcon={"top-[20px]"}
-          />
+          <div className={"w-full lg:max-w-[372px]"}>
+            <Input
+              icon={true}
+              placeholder={"Search"}
+              className={"bg-[#F5F5F5] pl-12 pr-3 py-[19px] h-[56px]"}
+              paddingForIcon={"top-5 left-5"}
+            />
+          </div>
 
           <NavLinks placeOfUse={"menu"} />
 

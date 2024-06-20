@@ -2,12 +2,19 @@ import logo from "shared/assets/images/Logo.svg";
 import cartIcon from "shared/assets/images/Icon/cart.svg";
 import closeIcon from "shared/assets/images/Icon/close.svg";
 import burgerIcon from "shared/assets/images/Icon/burger.svg";
+import logoutIcon from "shared/assets/images/Icon/logout.svg";
 import profileIcon from "shared/assets/images/Icon/profile.svg";
 import wishlistIcon from "shared/assets/images/Icon/wishlist.svg";
-import { SearchingWithIcon } from "../SearchingWithIcon";
-import { Link } from "react-router-dom";
+import { Input } from "../Input";
+import { Link, useNavigate } from "react-router-dom";
 import { NavLinks } from "./components";
 import { ChangeLanguage, Icon } from "../index";
+import {
+  useAppDispatch,
+  useAppSelector,
+} from "../../../app/providers/StoreProvider/hooks";
+import { userActions } from "../../../entities/User";
+import { useCallback } from "react";
 
 type HeaderProps = {
   mobileMenuVisible: boolean;
@@ -18,6 +25,15 @@ export const Header = ({
   onVisibleMobileMenu,
   mobileMenuVisible,
 }: HeaderProps) => {
+  const authData = useAppSelector((state) => state.userReducer.authData);
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
+  const onLogout = useCallback(() => {
+    dispatch(userActions.logout());
+    navigate("/");
+  }, [dispatch, navigate]);
+
   return (
     <header
       className={
@@ -31,7 +47,7 @@ export const Header = ({
               <div className={"flex items-center justify-between gap-9 w-full"}>
                 <Link to={"/"}>
                   <img
-                    className={"block hover:scale-110"}
+                    className={"block select-none hover:scale-110"}
                     src={logo}
                     alt={"Logotype"}
                     loading={"lazy"}
@@ -44,10 +60,14 @@ export const Header = ({
                     "hidden items-center justify-between gap-9 w-full lg:flex"
                   }
                 >
-                  <SearchingWithIcon
-                    className={"py-[19px] h-[56px]"}
-                    paddingForIcon={"top-[20px]"}
-                  />
+                  <div className={"w-full lg:max-w-[372px]"}>
+                    <Input
+                      icon={true}
+                      placeholder={"Search"}
+                      className={"bg-[#F5F5F5] pl-12 pr-3 py-[19px] h-[56px]"}
+                      paddingForIcon={"top-5 left-5"}
+                    />
+                  </div>
 
                   <NavLinks placeOfUse={"header"} />
 
@@ -73,13 +93,23 @@ export const Header = ({
                     </Link>
 
                     <Link
-                      to={"/profile"}
+                      to={authData ? "/profile" : "/login"}
                       className={
                         "flex items-center justify-center hover:scale-110"
                       }
                     >
                       <Icon src={profileIcon} alt={"Profile"} />
                     </Link>
+
+                    {authData && (
+                      <button
+                        type={"button"}
+                        className={"block bg-none border-none hover:scale-110"}
+                        onClick={onLogout}
+                      >
+                        <Icon src={logoutIcon} alt={"Logout"} />
+                      </button>
+                    )}
                   </div>
                 </div>
 

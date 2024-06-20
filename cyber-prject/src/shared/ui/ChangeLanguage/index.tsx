@@ -16,7 +16,7 @@ export const ChangeLanguage = () => {
       onClick={onToggleLanguage}
     >
       <img
-        className={"w-[24px] lg:w-[22px]"}
+        className={"w-[24px] select-none lg:w-[22px]"}
         src={i18n.language === "en" ? enFlag : ruFlag}
         alt={"Language"}
         loading={"lazy"}

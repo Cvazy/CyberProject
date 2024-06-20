@@ -84,7 +84,7 @@ export const BannerElement: FC<BannerElementProps> = ({
           )}
           <img
             style={isImageLoaded ? {} : { display: "none" }}
-            className={"w-full"}
+            className={"w-full select-none"}
             src={imagePath}
             onLoad={handleImageLoad}
             loading={"lazy"}

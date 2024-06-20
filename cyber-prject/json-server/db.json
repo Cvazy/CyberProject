@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "adminPassword"
+    }
+  ],
   "mainBanners": [
     {
       "title": "Pro.Beyond.",
@@ -50,7 +57,7 @@
       "smallBanner": {
         "title": "Apple AirPods",
         "subtitle": "Max",
-        "description": "Computational audio. Listen, it's powerful.",
+        "description": "Computational audio. Listen, it's powerful",
         "imageSrc": "https://i.ibb.co/DpRnZJc/Airpods-Max.png"
       }
     },
@@ -58,7 +65,7 @@
       "bgColor": "bg-[#353535]",
       "hoverEffect": true,
       "titleClass": "text-white lg:text-xl xl:text-2xl 2xl:text-3xl",
-      "subtitleClass": "font-medium",
+      "subtitleClass": "font-medium lg:block",
       "imageSize": "max-w-[330px] max-h-[190px]",
       "smallBanner": {
         "title": "Apple Vision",
@@ -79,6 +86,53 @@
         "description": "The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.",
         "imageSrc": "https://i.ibb.co/5sC6XzJ/MacBook.png"
       }
+    }
+  ],
+  "categories": [
+    {
+      "id": "001",
+      "name": "Phones",
+      "imageSrc": "https://i.ibb.co/Xb6ynxT/Phones.png"
+    },
+    {
+      "id": "002",
+      "name": "Smart Watches",
+      "imageSrc": "https://i.ibb.co/V3cMFBz/Smart-Watches.png"
+    },
+    {
+      "id": "003",
+      "name": "Cameras",
+      "imageSrc": "https://i.ibb.co/fkkdSsC/Cameras.png"
+    },
+    {
+      "id": "004",
+      "name": "Headphones",
+      "imageSrc": "https://i.ibb.co/F7s7QFg/Headphones.png"
+    },
+    {
+      "id": "005",
+      "name": "Computers",
+      "imageSrc": "https://i.ibb.co/bdNKfdr/Computers.png"
+    },
+    {
+      "id": "006",
+      "name": "Gaming",
+      "imageSrc": "https://i.ibb.co/qdxMHjH/Gaming.png"
+    },
+    {
+      "id": "007",
+      "name": "Phones",
+      "imageSrc": "https://i.ibb.co/Xb6ynxT/Phones.png"
+    },
+    {
+      "id": "008",
+      "name": "Smart Watches",
+      "imageSrc": "https://i.ibb.co/V3cMFBz/Smart-Watches.png"
+    },
+    {
+      "id": "009",
+      "name": "Cameras",
+      "imageSrc": "https://i.ibb.co/fkkdSsC/Cameras.png"
     }
   ]
 }

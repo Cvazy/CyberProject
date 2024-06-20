@@ -78,3 +78,16 @@ input {
 .swiper-pagination {
   @apply !bottom-4
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !w-[32px] !h-[32px] !text-black !mt-0 !top-0 after:!text-2xl after:content-[""]
+}
+
+.swiper-button-next {
+  @apply !right-0
+}
+
+.swiper-button-prev {
+  @apply !right-[48px] !left-[unset]
+}

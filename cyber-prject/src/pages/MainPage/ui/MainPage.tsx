@@ -1,4 +1,4 @@
-import { MainBanner, SmallerBanners } from "entities/index";
+import { MainBanner, SmallerBanners, ShopCategories } from "entities/index";
 
 const MainPage = () => {
   return (
@@ -6,6 +6,7 @@ const MainPage = () => {
       <div className={"flex flex-col items-center w-full h-full"}>
         <MainBanner />
         <SmallerBanners />
+        <ShopCategories />
       </div>
     </div>
   );
