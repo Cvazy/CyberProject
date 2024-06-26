@@ -1,18 +1,38 @@
 import { Input } from "../Input";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import wishlistIcon from "shared/assets/images/Icon/wishlist.svg";
 import cartIcon from "shared/assets/images/Icon/cart.svg";
 import profileIcon from "shared/assets/images/Icon/profile.svg";
 import { NavLinks } from "../Header/components";
 import { Icon } from "../Icon";
 import { useTranslation } from "react-i18next";
+import {
+  useAppDispatch,
+  useAppSelector,
+} from "../../../app/providers/StoreProvider/hooks";
+import { useCallback } from "react";
+import { userActions } from "../../../entities/User";
+import logoutIcon from "../../assets/images/Icon/logout.svg";
 
 type MobileMenuProps = {
   mobileMenuVisible: boolean;
+  setMobileMenuVisible: any;
 };
 
-export const MobileMenu = ({ mobileMenuVisible }: MobileMenuProps) => {
+export const MobileMenu = ({
+  mobileMenuVisible,
+  setMobileMenuVisible,
+}: MobileMenuProps) => {
   const { t } = useTranslation();
+  const authData = useAppSelector((state) => state.userReducer.authData);
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
+  const onLogout = useCallback(() => {
+    dispatch(userActions.logout());
+    navigate("/");
+    setMobileMenuVisible(false);
+  }, [dispatch, navigate, setMobileMenuVisible]);
 
   return (
     <div
@@ -29,48 +49,86 @@ export const MobileMenu = ({ mobileMenuVisible }: MobileMenuProps) => {
             />
           </div>
 
-          <NavLinks placeOfUse={"menu"} />
+          <NavLinks
+            placeOfUse={"menu"}
+            setMobileMenuVisible={setMobileMenuVisible}
+          />
 
-          <div className={"flex flex-col items-start gap-4"}>
-            <Link
-              to={"/wishlist"}
-              className={"flex items-center gap-3 flex-nowrap"}
-            >
-              <div className={"flex items-center justify-center"}>
-                <Icon src={wishlistIcon} alt={"Wishlist"} />
+          {authData && (
+            <div className={"flex flex-col items-start gap-4"}>
+              <Link
+                to={"/wishlist"}
+                className={"flex items-center gap-3 flex-nowrap"}
+                onClick={() => setMobileMenuVisible(false)}
+              >
+                <div className={"flex items-center justify-center"}>
+                  <Icon src={wishlistIcon} alt={"Wishlist"} />
+                </div>
+
+                <p className={"text-base text-black text-nowrap"}>
+                  {t("Your Wishlist")}
+                </p>
+              </Link>
+
+              <Link
+                to={"/cart"}
+                className={"flex items-center gap-3 flex-nowrap"}
+                onClick={() => setMobileMenuVisible(false)}
+              >
+                <div className={"flex items-center justify-center"}>
+                  <Icon src={cartIcon} alt={"Cart"} />
+                </div>
+
+                <p className={"text-base text-black text-nowrap"}>
+                  {t("Your Cart")}
+                </p>
+              </Link>
+
+              <Link
+                to={"/profile"}
+                className={"flex items-center gap-3 flex-nowrap"}
+                onClick={() => setMobileMenuVisible(false)}
+              >
+                <div className={"flex items-center justify-center"}>
+                  <Icon src={profileIcon} alt={"Profile"} />
+                </div>
+
+                <p className={"text-base text-black text-nowrap"}>
+                  {t("Your Profile")}
+                </p>
+              </Link>
+
+              <div
+                role={"button"}
+                className={"flex items-center gap-3 flex-nowrap"}
+                onClick={onLogout}
+              >
+                <div className={"flex items-center justify-center"}>
+                  <Icon src={logoutIcon} alt={"Logout"} />
+                </div>
+
+                <p className={"text-base text-black text-nowrap"}>
+                  {t("Logout")}
+                </p>
               </div>
+            </div>
+          )}
 
-              <p className={"text-base text-black text-nowrap"}>
-                {t("Your Wishlist")}
-              </p>
-            </Link>
-
+          {!authData && (
             <Link
-              to={"/cart"}
+              to={"/login"}
               className={"flex items-center gap-3 flex-nowrap"}
-            >
-              <div className={"flex items-center justify-center"}>
-                <Icon src={cartIcon} alt={"Cart"} />
-              </div>
-
-              <p className={"text-base text-black text-nowrap"}>
-                {t("Your Cart")}
-              </p>
-            </Link>
-
-            <Link
-              to={"/profile"}
-              className={"flex items-center gap-3 flex-nowrap"}
+              onClick={() => setMobileMenuVisible(false)}
             >
               <div className={"flex items-center justify-center"}>
                 <Icon src={profileIcon} alt={"Profile"} />
               </div>
 
               <p className={"text-base text-black text-nowrap"}>
-                {t("Your Profile")}
+                {t("Authorization")}
               </p>
             </Link>
-          </div>
+          )}
         </div>
       </div>
     </div>

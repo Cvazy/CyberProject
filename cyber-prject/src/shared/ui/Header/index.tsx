@@ -19,11 +19,13 @@ import { useCallback } from "react";
 type HeaderProps = {
   mobileMenuVisible: boolean;
   onVisibleMobileMenu: () => void;
+  setMobileMenuVisible: any;
 };
 
 export const Header = ({
   onVisibleMobileMenu,
   mobileMenuVisible,
+  setMobileMenuVisible,
 }: HeaderProps) => {
   const authData = useAppSelector((state) => state.userReducer.authData);
   const dispatch = useAppDispatch();
@@ -45,7 +47,7 @@ export const Header = ({
           <div className={"max-w-[1120px] w-full"}>
             <div className={"flex justify-center items-center w-full"}>
               <div className={"flex items-center justify-between gap-9 w-full"}>
-                <Link to={"/"}>
+                <Link to={"/"} onClick={() => setMobileMenuVisible(false)}>
                   <img
                     className={"block select-none hover:scale-110"}
                     src={logo}
@@ -69,7 +71,10 @@ export const Header = ({
                     />
                   </div>
 
-                  <NavLinks placeOfUse={"header"} />
+                  <NavLinks
+                    placeOfUse={"header"}
+                    setMobileMenuVisible={setMobileMenuVisible}
+                  />
 
                   <div className={"flex items-center flex-nowrap gap-6"}>
                     <ChangeLanguage />

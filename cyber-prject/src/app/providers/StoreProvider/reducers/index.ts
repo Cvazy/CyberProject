@@ -4,6 +4,7 @@ import SmallBannerReducer from "entities/SmallerBanners/model/slice";
 import CategoriesReducer from "entities/ShopCategories/model/slice";
 import { loginReducer } from "features/AuthByLogin/model";
 import { userReducer } from "entities/User";
+import { updateUserDataReducer } from "features/UpdateUserData/model";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   CategoriesReducer,
   loginReducer,
   userReducer,
+  updateUserDataReducer,
 });

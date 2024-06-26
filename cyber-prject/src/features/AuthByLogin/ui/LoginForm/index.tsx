@@ -16,7 +16,7 @@ export const LoginForm = memo(() => {
   const authData = useAppSelector((state) => state.userReducer.authData);
 
   const dispatch = useAppDispatch();
-  const { login, password, error, isLoading } = useAppSelector(
+  const { username, password, error, isLoading } = useAppSelector(
     (state) => state.loginReducer,
   );
 
@@ -35,8 +35,8 @@ export const LoginForm = memo(() => {
   );
 
   const onLoginClick = useCallback(() => {
-    dispatch(LoginByUsername({ login, password }));
-  }, [dispatch, login, password]);
+    dispatch(LoginByUsername({ username, password }));
+  }, [dispatch, username, password]);
 
   useEffect(() => {
     if (authData) {
@@ -63,7 +63,7 @@ export const LoginForm = memo(() => {
             placeholder={"Login..."}
             className={"bg-white py-4 pl-12 pr-3 h-[56px]"}
             onChange={onChangeLogin}
-            value={login}
+            value={username}
           />
         </label>
 

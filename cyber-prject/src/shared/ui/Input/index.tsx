@@ -1,5 +1,11 @@
 import searchIcon from "../../assets/images/Icon/search.svg";
-import { HTMLAttributes, useState } from "react";
+import {
+  forwardRef,
+  HTMLAttributes,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 
 interface InputProps
@@ -11,22 +17,35 @@ interface InputProps
   paddingForIcon?: string;
   value?: string;
   onChange?: (value: string) => void;
+  disabled?: boolean;
 }
 
-export const Input = ({
-  icon,
-  className,
-  name,
-  type,
-  placeholder,
-  paddingForIcon,
-  value,
-  onChange,
-}: InputProps) => {
+export const Input = forwardRef((props: InputProps, ref) => {
+  const {
+    icon,
+    className,
+    name,
+    type,
+    placeholder,
+    paddingForIcon,
+    value,
+    onChange,
+    disabled,
+  } = props;
   const { t } = useTranslation();
   const [searchingValue, setSearchingValue] = useState("");
 
   const inputPaddingLeft = icon ? "pl-12" : "pl-3";
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    focus: () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    },
+  }));
 
   return (
     <div className="flex flex-grow w-full relative">
@@ -39,6 +58,8 @@ export const Input = ({
         onChange={({ target }) =>
           onChange ? onChange(target.value) : setSearchingValue(target.value)
         }
+        disabled={disabled || false}
+        ref={inputRef}
       />
 
       {icon && (
@@ -52,4 +73,4 @@ export const Input = ({
       )}
     </div>
   );
-};
+});

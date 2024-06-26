@@ -5,19 +5,19 @@ import { LOCALSTORAGE_USER_KEY } from "../../../../../shared/const/localstorage"
 import { userActions } from "../../../../../entities/User";
 
 interface LoginByUsernameProps {
-  login: string;
+  username: string;
   password: string;
 }
 
 export const LoginByUsername = createAsyncThunk(
   "LoginForm/LoginByUsername",
   async (
-    { login, password }: LoginByUsernameProps,
+    { username, password }: LoginByUsernameProps,
     { dispatch, rejectWithValue },
   ) => {
     try {
       const response = await axios.post(`${serverUrl}/login`, {
-        username: login,
+        username,
         password,
       });
 

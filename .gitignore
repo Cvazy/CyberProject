@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.idea
+cyber-prject/node_modules
+package-lock.json
+package.json
+cyber-prject/build

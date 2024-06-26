@@ -23,11 +23,15 @@ const Shop = () => {
           "flex flex-col items-center bg-white min-h-dvh w-full h-max relative"
         }
       >
-        <MobileMenu mobileMenuVisible={mobileMenuVisible} />
+        <MobileMenu
+          mobileMenuVisible={mobileMenuVisible}
+          setMobileMenuVisible={setMobileMenuVisible}
+        />
 
         <Header
           onVisibleMobileMenu={onVisibleMobileMenu}
           mobileMenuVisible={mobileMenuVisible}
+          setMobileMenuVisible={setMobileMenuVisible}
         />
 
         <main className={"flex flex-grow w-full"}>

@@ -6,12 +6,13 @@ export const Button = ({
   className,
   onClick,
   disabled,
+  type,
 }: ButtonHTMLAttributes<any>) => {
   const { t } = useTranslation();
 
   return (
     <button
-      type={"button"}
+      type={type ? type : "button"}
       className={`main_button ${className}`}
       onClick={onClick}
       disabled={disabled}

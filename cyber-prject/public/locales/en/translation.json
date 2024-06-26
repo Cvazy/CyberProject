@@ -43,5 +43,6 @@
   "Authorization": "Authorization",
   "Password...": "Password...",
   "Login...": "Login...",
-  "Incorrect data was entered": "Incorrect data was entered"
+  "Incorrect data was entered": "Incorrect data was entered",
+  "Logout": "Logout"
 }

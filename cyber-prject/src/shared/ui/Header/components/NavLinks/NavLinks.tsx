@@ -3,9 +3,13 @@ import { useTranslation } from "react-i18next";
 
 type NavLinksProps = {
   placeOfUse: string;
+  setMobileMenuVisible: any;
 };
 
-export const NavLinks = ({ placeOfUse }: NavLinksProps) => {
+export const NavLinks = ({
+  placeOfUse,
+  setMobileMenuVisible,
+}: NavLinksProps) => {
   const { t } = useTranslation();
 
   return (
@@ -19,6 +23,7 @@ export const NavLinks = ({ placeOfUse }: NavLinksProps) => {
             " ",
           )
         }
+        onClick={() => setMobileMenuVisible(false)}
       >
         {t("Home")}
       </NavLink>
@@ -30,6 +35,7 @@ export const NavLinks = ({ placeOfUse }: NavLinksProps) => {
             " ",
           )
         }
+        onClick={() => setMobileMenuVisible(false)}
       >
         {t("About")}
       </NavLink>
@@ -41,6 +47,7 @@ export const NavLinks = ({ placeOfUse }: NavLinksProps) => {
             " ",
           )
         }
+        onClick={() => setMobileMenuVisible(false)}
       >
         {t("Contact Us")}
       </NavLink>
@@ -52,6 +59,7 @@ export const NavLinks = ({ placeOfUse }: NavLinksProps) => {
             " ",
           )
         }
+        onClick={() => setMobileMenuVisible(false)}
       >
         {t("Blog")}
       </NavLink>

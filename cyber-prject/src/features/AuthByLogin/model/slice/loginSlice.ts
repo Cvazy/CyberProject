@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { LoginByUsername } from "../services";
 
 const initialLoginState: LoginSchema = {
-  login: "",
+  username: "",
   password: "",
   isLoading: false,
   error: "",
@@ -14,7 +14,7 @@ export const LoginSlice = createSlice({
   initialState: initialLoginState,
   reducers: {
     setLogin: (state, action: PayloadAction<string>) => {
-      state.login = action.payload;
+      state.username = action.payload;
     },
 
     setPassword: (state, action: PayloadAction<string>) => {

@@ -6,6 +6,16 @@
       "password": "adminPassword"
     }
   ],
+  "profiles": [
+    {
+      "id": 1,
+      "username": "admin",
+      "name": "Павел",
+      "surname": "Мурахтанов",
+      "patronymic": "Игоревич",
+      "birthday": "24.02.2004"
+    }
+  ],
   "mainBanners": [
     {
       "title": "Pro.Beyond.",
@@ -15,7 +25,6 @@
       "productId": "020",
       "imagePath": "https://i.ibb.co/RNtgdnz/iphone-banner.png"
     },
-
     {
       "title": "Pro.Beyond.",
       "model": "MacBook",
@@ -24,7 +33,6 @@
       "productId": "030",
       "imagePath": "https://i.ibb.co/XpzVtWS/MacBook.png"
     },
-
     {
       "title": "Pro.Beyond.",
       "model": "AirPods",

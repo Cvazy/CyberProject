@@ -1,11 +1,11 @@
 import { RouteProps } from "react-router-dom";
 import {
   AuthPage,
-  CartPage,
   CatalogPage,
   MainPage,
   OrderPage,
   ProductPage,
+  LkPage,
 } from "pages";
 
 export enum AppRoutes {
@@ -16,6 +16,8 @@ export enum AppRoutes {
   PRODUCT = "product",
   CART = "cart",
   ORDER = "order",
+  PROFILE = "profile",
+  WISHLIST = "wishlist",
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
@@ -26,6 +28,8 @@ export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.PRODUCT]: "/product",
   [AppRoutes.CART]: "/cart",
   [AppRoutes.ORDER]: "/order",
+  [AppRoutes.PROFILE]: "/profile",
+  [AppRoutes.WISHLIST]: "/wishlist",
 };
 
 export const RouteConfig: Record<AppRoutes, RouteProps> = {
@@ -56,11 +60,21 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
 
   [AppRoutes.CART]: {
     path: RoutePaths.cart,
-    element: <CartPage />,
+    element: <LkPage />,
   },
 
   [AppRoutes.ORDER]: {
     path: RoutePaths.order,
     element: <OrderPage />,
+  },
+
+  [AppRoutes.PROFILE]: {
+    path: RoutePaths.profile,
+    element: <LkPage />,
+  },
+
+  [AppRoutes.WISHLIST]: {
+    path: RoutePaths.wishlist,
+    element: <LkPage />,
   },
 };

@@ -1,6 +1,10 @@
 export interface User {
   id?: number;
-  login?: string;
+  username?: string;
+  name?: string;
+  surname?: string;
+  patronymic?: string;
+  birthday?: string;
 }
 
 export interface UserSchema {

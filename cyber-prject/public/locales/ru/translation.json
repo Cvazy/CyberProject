@@ -43,5 +43,6 @@
   "Authorization": "Авторизация",
   "Password...": "Пароль...",
   "Login...": "Логин...",
-  "Incorrect data was entered": "Введены неверные данные"
+  "Incorrect data was entered": "Введены неверные данные",
+  "Logout": "Выйти"
 }
