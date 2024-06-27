@@ -149,7 +149,7 @@ export const UpdateUserDataForm = ({ formData }: UpdateUserDataFormProps) => {
 
       <div
         className={
-          "col-span-2 flex flex-col items-center gap-4 w-full md:flex-row"
+          "flex flex-col items-center gap-4 w-full md:flex-row lg:col-span-2"
         }
       >
         <Button

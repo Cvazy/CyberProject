@@ -1,4 +1,5 @@
 import { MainBanner, SmallerBanners, ShopCategories } from "entities/index";
+import { ProductCategoriesOnIndex } from "../../../widgets";
 
 const MainPage = () => {
   return (
@@ -7,6 +8,7 @@ const MainPage = () => {
         <MainBanner />
         <SmallerBanners />
         <ShopCategories />
+        <ProductCategoriesOnIndex />
       </div>
     </div>
   );
