@@ -1,6 +1,6 @@
 import { ProfileSidebar } from "../components";
-import { useMatch } from "react-router-dom";
-import React from "react";
+import { useMatch, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import { CartBlock, ProfileBlock, WishlistBlock } from "pages";
 import { useAppSelector } from "../../../app/providers/StoreProvider/hooks";
 
@@ -9,7 +9,15 @@ const LkPage = () => {
   const checkProfilePage = !!useMatch("/profile");
   const checkWishlistPage = !!useMatch("/wishlist");
 
+  const navigate = useNavigate();
+
   const authData = useAppSelector((state) => state.userReducer.authData);
+
+  useEffect(() => {
+    if (!authData) {
+      navigate("/login");
+    }
+  }, [authData, navigate]);
 
   return (
     <div className={"w-full h-full"}>
