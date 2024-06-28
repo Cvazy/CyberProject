@@ -1,1 +1,1 @@
-export * from "./ProductCategoriesOnIndex";
+export * from "./ProductList";

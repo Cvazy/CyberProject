@@ -1,19 +1,30 @@
-import { ProductSchema } from "widgets/ProductCategoriesOnIndex/model";
+import { ProductListActions, ProductSchema } from "widgets/ProductList/model";
 import { Button, Icon } from "shared/ui";
+import FavoriteIcon from "shared/assets/images/Icon/favorite.svg";
 import ProductWishlistIcon from "shared/assets/images/Icon/product_wishlist.svg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useAppDispatch } from "../../../app/providers/StoreProvider/hooks";
+import { LoaderTwister } from "../../../shared/ui/Loader/LoaderTwister";
 
 interface ProductCardType {
   product: ProductSchema;
+  onRemove?: (id: number) => void;
 }
 
-export const ProductCard = ({ product }: ProductCardType) => {
-  const { id, name, price, sale, imageUrl } = product;
+export const ProductCard = ({ product, onRemove }: ProductCardType) => {
+  const { id, name, price, sale, imageUrl, favorite } = product;
+
+  const dispatch = useAppDispatch();
 
   const { t } = useTranslation();
   const nameRef = useRef(null);
+  const [isImageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   const clamp = (element: HTMLElement, lines: number) => {
     let text = element?.innerText;
@@ -35,13 +46,28 @@ export const ProductCard = ({ product }: ProductCardType) => {
     }
   }, [name]);
 
+  const onFavoriteClick = (productId: number) => {
+    dispatch(ProductListActions.setFavoriteProduct(productId));
+
+    if (onRemove) {
+      onRemove(productId);
+    }
+  };
+
   return (
     <div className={"w-full h-full rounded-lg bg-[#F6F6F6]"}>
       <div className={"py-6 px-3 w-full h-full md:px-4"}>
         <div className={"flex flex-col items-center gap-4 w-full h-full"}>
           <div className={"flex justify-end w-full"}>
-            <button type={"button"} className={"hover:scale-110"}>
-              <Icon src={ProductWishlistIcon} alt={"Wishlist"} />
+            <button
+              type={"button"}
+              className={"hover:scale-110"}
+              onClick={() => onFavoriteClick(id)}
+            >
+              <Icon
+                src={favorite ? FavoriteIcon : ProductWishlistIcon}
+                alt={"Wishlist"}
+              />
             </button>
           </div>
 
@@ -50,14 +76,21 @@ export const ProductCard = ({ product }: ProductCardType) => {
               "flex justify-center items-center w-[104px] h-[104px] sm:w-[140px] sm:h-[140px] lg:w-[160px] lg:h-[160px]"
             }
           >
+            {!isImageLoaded && (
+              <div className={"h-[104px] sm:h-[140px] lg:h-[160px]"}>
+                <LoaderTwister />
+              </div>
+            )}
             <img
-              src={imageUrl}
+              style={isImageLoaded ? {} : { display: "none" }}
               className={
                 "block select-none w-full h-auto max-h-[104px] sm:max-h-[140px] lg:max-h-[160px]"
               }
-              alt={name}
+              src={imageUrl}
+              onLoad={handleImageLoad}
               loading={"lazy"}
               draggable={"false"}
+              alt={name}
             />
           </div>
 

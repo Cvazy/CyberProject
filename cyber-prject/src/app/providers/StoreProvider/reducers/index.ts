@@ -5,7 +5,7 @@ import CategoriesReducer from "entities/ShopCategories/model/slice";
 import { loginReducer } from "features/AuthByLogin/model";
 import { userReducer } from "entities/User";
 import { updateUserDataReducer } from "features/UpdateUserData/model";
-import { ProductCategoriesOnIndexReducer } from "../../../../widgets/ProductCategoriesOnIndex/model";
+import { ProductListReducer } from "../../../../widgets/ProductList/model";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -14,5 +14,5 @@ export const rootReducer = combineReducers({
   loginReducer,
   userReducer,
   updateUserDataReducer,
-  ProductCategoriesOnIndexReducer,
+  ProductListReducer,
 });

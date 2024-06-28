@@ -16,7 +16,7 @@ export const ProductCategoriesOnIndex = () => {
   const dispatch = useAppDispatch();
 
   const { productsData, error, isLoading } = useAppSelector(
-    (state) => state.ProductCategoriesOnIndexReducer,
+    (state) => state.ProductListReducer,
   );
 
   const [newArrivalStatus, setNewArrivalStatus] = useState(true);

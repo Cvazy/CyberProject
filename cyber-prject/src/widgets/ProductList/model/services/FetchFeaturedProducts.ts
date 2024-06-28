@@ -1,16 +1,17 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { serverUrl } from "app/constants";
+import mergeFavoriteProducts from "../utils/mergeFavoriteProducts";
 
-export const FetchNewArrivalProducts = createAsyncThunk(
-  "ProductCategoriesOnIndex/FetchNewArrivalProducts",
+export const FetchFeaturedProducts = createAsyncThunk(
+  "ProductList/FetchFeaturedProducts",
   async (_, { dispatch, rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `${serverUrl}/products?state=New%20Arrival`,
+        `${serverUrl}/products?state=Featured%20Products`,
       );
 
-      return response.data;
+      return mergeFavoriteProducts(response.data);
     } catch (error: any) {
       return rejectWithValue(error.response.data.message);
     }

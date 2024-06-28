@@ -5,6 +5,7 @@ export interface ProductSchema {
   price: number;
   sale?: number;
   state?: string;
+  favorite?: boolean;
 }
 
 export interface ProductList {
