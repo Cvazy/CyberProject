@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { CategoryMenuButton } from "./CategoryMenuButton";
 
 interface CategoriesMenuTypes {
   newArrivalStatus: boolean;
@@ -17,33 +17,29 @@ export const CategoriesMenu = ({
   onLoadBestseller,
   onLoadFeatured,
 }: CategoriesMenuTypes) => {
-  const { t } = useTranslation("mainPage");
-
   return (
-    <div className={"flex items-center gap-8 flex-nowrap w-full"}>
-      <button
-        type={"button"}
-        className={`text-base font-medium ${newArrivalStatus ? "text-black border-b-2" : "text-[#8B8B8B]"} border-solid border-black !leading-8 md:text-lg hover:text-black`}
-        onClick={onLoadNewArrival}
-      >
-        {t("New Arrival")}
-      </button>
+    <div
+      className={
+        "flex items-center justify-between gap-4 flex-nowrap w-full sm:justify-normal sm:gap-8"
+      }
+    >
+      <CategoryMenuButton
+        title={"New Arrival"}
+        categoryStatus={newArrivalStatus}
+        onLoadFunc={onLoadNewArrival}
+      />
 
-      <button
-        type={"button"}
-        className={`text-base font-medium ${bestsellerStatus ? "text-black border-b-2" : "text-[#8B8B8B]"} border-solid border-black !leading-8 md:text-lg hover:text-black`}
-        onClick={onLoadBestseller}
-      >
-        {t("Bestseller")}
-      </button>
+      <CategoryMenuButton
+        title={"Bestseller"}
+        categoryStatus={bestsellerStatus}
+        onLoadFunc={onLoadBestseller}
+      />
 
-      <button
-        type={"button"}
-        className={`text-base font-medium ${featuredStatus ? "text-black border-b-2" : "text-[#8B8B8B]"} border-solid border-black !leading-8 md:text-lg hover:text-black`}
-        onClick={onLoadFeatured}
-      >
-        {t("Featured Products")}
-      </button>
+      <CategoryMenuButton
+        title={"Featured Products"}
+        categoryStatus={featuredStatus}
+        onLoadFunc={onLoadFeatured}
+      />
     </div>
   );
 };
