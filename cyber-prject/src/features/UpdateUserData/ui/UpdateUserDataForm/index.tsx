@@ -3,8 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch } from "../../../../app/providers/StoreProvider/hooks";
 import { updateUserDataActions } from "../../model";
-import { ProfileSchema } from "../../model/types";
-import { UpdateUserData } from "../../model/services";
+import { ProfileSchema, UpdateUserData } from "../../model";
 
 interface UpdateUserDataFormProps {
   formData?: ProfileSchema;

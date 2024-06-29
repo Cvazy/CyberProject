@@ -22,7 +22,11 @@ const WishlistBlock: FC<UserSchema> = ({ authData }) => {
       </h1>
 
       <div className={"w-full"}>
-        <div className={"grid grid-cols-2 gap-4 w-full lg::grid-cols-3"}>
+        <div
+          className={
+            "grid grid-cols-none gap-4 w-full sm:grid-cols-2 2xl:grid-cols-3"
+          }
+        >
           {productsData.map((product: ProductSchema) => (
             <ProductCard
               key={product.id}

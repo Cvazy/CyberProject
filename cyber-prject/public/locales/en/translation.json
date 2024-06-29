@@ -39,11 +39,20 @@
   "Computers": "Computers",
   "Gaming": "Gaming",
   "Login": "Login",
+  "Register": "Register",
   "Enter your password": "Enter your password",
+  "Repeat your password": "Repeat your password",
   "Enter your login": "Enter your login",
   "Authorization": "Authorization",
   "Password...": "Password...",
+  "Repeat password...": "Repeat password...",
   "Login...": "Login...",
   "Incorrect data was entered": "Incorrect data was entered",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Big Summer": "Big Summer",
+  "Sale": "Sale",
+  "Non ho un account": "Non ho un account",
+  "Registration": "Registration",
+  "Already have an account": "Already have an account",
+  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas."
 }

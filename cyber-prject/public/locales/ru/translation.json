@@ -39,11 +39,20 @@
   "Computers": "Компьютеры",
   "Gaming": "Игры",
   "Login": "Войти",
+  "Register": "Зарегистрироваться",
   "Enter your password": "Введите ваш пароль",
+  "Repeat your password": "Повторите ваш пароль",
   "Enter your login": "Введите ваш логин",
   "Authorization": "Авторизация",
   "Password...": "Пароль...",
+  "Repeat password...": "Повтор пароля...",
   "Login...": "Логин...",
   "Incorrect data was entered": "Введены неверные данные",
-  "Logout": "Выйти"
+  "Logout": "Выйти",
+  "Big Summer": "Большие летние",
+  "Sale": "Скидки",
+  "Non ho un account": "Ещё нет аккаунта",
+  "Registration": "Регистрация",
+  "Already have an account": "Уже есть аккаунт",
+  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Успейте приобрести новую электронику с вкусной скидкой и бесплатной доставкой."
 }

@@ -1,41 +1,46 @@
-import { memo, useCallback, useEffect } from "react";
-import { Button, Input } from "../../../../shared/ui";
-import { PasswordInput } from "../../components";
+import { Button, Input } from "../../../shared/ui";
+import { PasswordInput } from "../../AuthByLogin/components";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   useAppDispatch,
   useAppSelector,
 } from "app/providers/StoreProvider/hooks";
-import { loginActions } from "../../model";
-import { LoginByUsername } from "../../model/services";
-import { Link, useNavigate } from "react-router-dom";
+import { useCallback, useEffect } from "react";
+import { registerActions, RegisterNewUser } from "../model";
 
-export const LoginForm = memo(() => {
+export const RegisterForm = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const authData = useAppSelector((state) => state.userReducer.authData);
 
   const dispatch = useAppDispatch();
-  const { username, password, error, isLoading } = useAppSelector(
-    (state) => state.loginReducer,
-  );
+  const { username, password, repeatPassword, error, isLoading } =
+    useAppSelector((state) => state.registerReducer);
 
   const onChangeLogin = useCallback(
     (value: string) => {
-      dispatch(loginActions.setLogin(value));
+      dispatch(registerActions.setLogin(value));
     },
     [dispatch],
   );
 
   const onChangePassword = useCallback(
     (value: string) => {
-      dispatch(loginActions.setPassword(value));
+      dispatch(registerActions.setPassword(value));
     },
     [dispatch],
   );
 
-  const onLoginClick = useCallback(() => {
-    dispatch(LoginByUsername({ username, password }));
+  const onChangeRepeatPassword = useCallback(
+    (value: string) => {
+      dispatch(registerActions.setRepeatPassword(value));
+    },
+    [dispatch],
+  );
+
+  const onRegisterClick = useCallback(() => {
+    dispatch(RegisterNewUser({ username, password }));
   }, [dispatch, username, password]);
 
   useEffect(() => {
@@ -75,6 +80,19 @@ export const LoginForm = memo(() => {
           {t("Enter your password")}
           <PasswordInput onChange={onChangePassword} value={password} />
         </label>
+
+        <label
+          className={
+            "flex flex-col items-start gap-2 w-full text-sm font-medium text-[#545454]"
+          }
+        >
+          {t("Repeat your password")}
+          <PasswordInput
+            repeatPass={true}
+            onChange={onChangeRepeatPassword}
+            value={repeatPassword}
+          />
+        </label>
       </div>
 
       <div className={"flex flex-col items-center gap-4 w-full"}>
@@ -83,10 +101,10 @@ export const LoginForm = memo(() => {
           className={
             "h-56 text-white bg-black border-black px-56 w-full hover:bg-white hover:text-black disabled:opacity-50 disabled:cursor-no-drop"
           }
-          onClick={onLoginClick}
+          onClick={onRegisterClick}
           disabled={isLoading}
         >
-          {t("Login")}
+          {t("Register")}
         </Button>
 
         <p
@@ -94,12 +112,12 @@ export const LoginForm = memo(() => {
             "flex justify-center text-[#545454] font-normal text-sm text-center w-full"
           }
         >
-          {t("Non ho un account")}?&nbsp;
-          <Link to={"/register"} className={"font-medium hover:scale-105"}>
-            {t("Registration")}
+          {t("Already have an account")}?&nbsp;
+          <Link to={"/login"} className={"font-medium hover:scale-105"}>
+            {t("Authorization")}
           </Link>
         </p>
       </div>
     </div>
   );
-});
+};

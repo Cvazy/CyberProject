@@ -2,9 +2,8 @@ import { combineReducers } from "@reduxjs/toolkit";
 import MainBannerReducer from "entities/MainBanner/model/slice";
 import SmallBannerReducer from "entities/SmallerBanners/model/slice";
 import CategoriesReducer from "entities/ShopCategories/model/slice";
-import { loginReducer } from "features/AuthByLogin/model";
+import { loginReducer, updateUserDataReducer, registerReducer } from "features";
 import { userReducer } from "entities/User";
-import { updateUserDataReducer } from "features/UpdateUserData/model";
 import { ProductListReducer } from "../../../../widgets/ProductList/model";
 
 export const rootReducer = combineReducers({
@@ -12,6 +11,7 @@ export const rootReducer = combineReducers({
   SmallBannerReducer,
   CategoriesReducer,
   loginReducer,
+  registerReducer,
   userReducer,
   updateUserDataReducer,
   ProductListReducer,

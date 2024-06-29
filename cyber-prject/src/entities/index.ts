@@ -3,3 +3,4 @@ export * from "./SmallerBanners";
 export * from "./ShopCategories";
 export * from "./PageError";
 export * from "./ProductCard";
+export * from "./FooterBanner";

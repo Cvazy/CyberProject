@@ -4,6 +4,21 @@
       "id": 1,
       "username": "admin",
       "password": "adminPassword"
+    },
+    {
+      "username": "newUser",
+      "password": "qwerty123",
+      "id": 2
+    },
+    {
+      "username": "Pavel",
+      "password": "pavel",
+      "id": 3
+    },
+    {
+      "username": "testUserName",
+      "password": "test",
+      "id": 4
     }
   ],
   "profiles": [
@@ -14,6 +29,27 @@
       "surname": "Мурахтанов",
       "patronymic": "Игоревич",
       "birthday": "24.02.2004"
+    },
+    {
+      "username": "newUser",
+      "name": "",
+      "surname": "",
+      "patronymic": "",
+      "id": 2
+    },
+    {
+      "username": "Pavel",
+      "name": "",
+      "surname": "",
+      "patronymic": "",
+      "id": 3
+    },
+    {
+      "username": "testUserName",
+      "name": "",
+      "surname": "",
+      "patronymic": "",
+      "id": 4
     }
   ],
   "mainBanners": [
@@ -152,7 +188,6 @@
       "sale": 20,
       "state": "New Arrival"
     },
-
     {
       "id": 2,
       "name": "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
@@ -161,7 +196,6 @@
       "sale": 35,
       "state": "New Arrival"
     },
-
     {
       "id": 3,
       "name": "Blackmagic Pocket Cinema Camera 6k",
@@ -169,7 +203,6 @@
       "price": 2535,
       "state": "New Arrival"
     },
-
     {
       "id": 4,
       "name": "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
@@ -177,7 +210,6 @@
       "price": 1799,
       "state": "New Arrival"
     },
-
     {
       "id": 5,
       "name": "Galaxy Buds FE Graphite",
@@ -185,7 +217,6 @@
       "price": 549,
       "state": "New Arrival"
     },
-
     {
       "id": 6,
       "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (MK2L3) 2021",
@@ -193,14 +224,12 @@
       "price": 99.99,
       "state": "New Arrival"
     },
-
     {
       "id": 7,
       "name": "Apple iPad 9 10.2\" 128GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
       "price": 398
     },
-
     {
       "id": 8,
       "name": "Apple iPad 9 10.2\" 256GB Wi-Fi Silver (MK2L3) 2021",
@@ -208,21 +237,18 @@
       "price": 579,
       "state": "Bestseller"
     },
-
     {
       "id": 9,
       "name": "Apple iPad 9 10.2\" 512GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
       "price": 899
     },
-
     {
       "id": 10,
       "name": "Apple iPhone 11 64GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
       "price": 510
     },
-
     {
       "id": 11,
       "name": "Apple iPhone 11 128GB White (MQ233)",
@@ -230,7 +256,6 @@
       "price": 649,
       "state": "Bestseller"
     },
-
     {
       "id": 12,
       "name": "Apple iPhone 11 256GB White (MQ233)",
@@ -238,14 +263,12 @@
       "price": 799,
       "state": "Featured Products"
     },
-
     {
       "id": 13,
       "name": "Apple iPhone 11 512GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
       "price": 949
     },
-
     {
       "id": 14,
       "name": "Apple iPhone 13 mini 128GB Pink (MLK23)",
@@ -253,7 +276,6 @@
       "price": 850,
       "state": "Bestseller"
     },
-
     {
       "id": 15,
       "name": "Apple iPhone 13 mini 256GB Pink (MLK23)",
@@ -261,7 +283,6 @@
       "price": 1049,
       "state": "Featured Products"
     },
-
     {
       "id": 16,
       "name": "Apple iPhone 14 Pro 128GB Space Black (MQ0T3)",
@@ -269,14 +290,12 @@
       "price": 1399,
       "state": "Bestseller"
     },
-
     {
       "id": 17,
       "name": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
       "price": 1499
     },
-
     {
       "id": 18,
       "name": "Apple iPhone 14 Pro 512GB Space Black (MQ0T3)",
@@ -284,15 +303,12 @@
       "price": 1799,
       "state": "Featured Products"
     },
-
     {
       "id": 19,
       "name": "Apple iPhone 14 Pro 1TB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
       "price": 1999
     },
-
-
     {
       "id": 20,
       "name": "Apple iPhone 14 Pro 256GB Gold (MQ233)",
@@ -301,7 +317,6 @@
       "sale": 15,
       "state": "Bestseller"
     },
-
     {
       "id": 21,
       "name": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
@@ -309,14 +324,12 @@
       "price": 1859,
       "state": "Featured Products"
     },
-
     {
       "id": 22,
       "name": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       "imageUrl": "https://i.ibb.co/LxpzXdk/Iphone14-Pro-Gold.png",
       "price": 2249
     },
-
     {
       "id": 23,
       "name": "Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)",
@@ -324,7 +337,6 @@
       "price": 1449,
       "state": "New Arrival"
     },
-
     {
       "id": 24,
       "name": "Apple iPhone 14 Pro 256GB Deep Purple (MQ0G3)",
@@ -332,14 +344,12 @@
       "price": 1849,
       "state": "Featured Products"
     },
-
     {
       "id": 25,
       "name": "Apple iPhone 14 Pro 512GB Deep Purple (MQ0G3)",
       "imageUrl": "https://i.ibb.co/rHjCFFN/Iphone14-Pro-Purple.png",
       "price": 1999
     },
-
     {
       "id": 26,
       "name": "Apple iPhone 14 Pro 1TB Deep Purple (MQ0G3)",
@@ -347,7 +357,6 @@
       "price": 2199,
       "state": "Bestseller"
     },
-
     {
       "id": 27,
       "name": "Apple iPhone 14 Pro 128GB White (MQ2V3)",
@@ -355,21 +364,18 @@
       "price": 1399,
       "state": "Featured Products"
     },
-
     {
       "id": 28,
       "name": "Apple iPhone 14 Pro 256GB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
       "price": 1499
     },
-
     {
       "id": 29,
       "name": "Apple iPhone 14 Pro 512GB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
       "price": 1799
     },
-
     {
       "id": 30,
       "name": "Apple iPhone 14 Pro 1TB White (MQ2V3)",
@@ -377,7 +383,6 @@
       "price": 1999,
       "sale": 50
     },
-
     {
       "id": 31,
       "name": "Samsung Galaxy Watch6 Classic 47mm Black",
@@ -385,7 +390,6 @@
       "price": 369,
       "state": "New Arrival"
     },
-
     {
       "id": 32,
       "name": "Playstation 5",
@@ -393,7 +397,6 @@
       "price": 999,
       "state": "Featured Products"
     },
-
     {
       "id": 33,
       "name": "Apple Vision Pro",
@@ -401,7 +404,6 @@
       "price": 3549,
       "state": "Bestseller"
     },
-
     {
       "id": 34,
       "name": "MacBook Pro",
@@ -409,7 +411,6 @@
       "price": 2549,
       "state": "Bestseller"
     },
-
     {
       "id": 35,
       "name": "Samsung Galaxy 21S Ultra",

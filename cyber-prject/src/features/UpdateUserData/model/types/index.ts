@@ -4,7 +4,6 @@ export interface ProfileSchema {
   name?: string;
   surname?: string;
   patronymic?: string;
-  birthday?: string;
 }
 
 export interface UpdateUserDataSchema {

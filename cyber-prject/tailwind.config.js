@@ -13,6 +13,12 @@ module.exports = {
       boxShadow: {
         custom: "15px 15px 35px black",
       },
+      backgroundImage: {
+        "mobile-footer-banner":
+          "url('../shared/assets/images/FooterBanners/MobileBanner.jpg')",
+        "desktop-footer-banner":
+          "url('../shared/assets/images/FooterBanners/Banner.jpg')",
+      },
     },
   },
   plugins: [],

@@ -6,9 +6,14 @@ import { useState } from "react";
 interface PasswordInputProps {
   value?: string;
   onChange?: (value: string) => void;
+  repeatPass?: boolean;
 }
 
-export const PasswordInput = ({ value, onChange }: PasswordInputProps) => {
+export const PasswordInput = ({
+  value,
+  onChange,
+  repeatPass,
+}: PasswordInputProps) => {
   const [inputType, setInputType] = useState("password");
 
   const handleChangeInputType = () => {
@@ -22,7 +27,7 @@ export const PasswordInput = ({ value, onChange }: PasswordInputProps) => {
         type={inputType}
         name={"password"}
         value={value}
-        placeholder={"Password..."}
+        placeholder={repeatPass ? "Repeat password..." : "Password..."}
         className={"bg-white py-4 pr-12 pl-3 h-[56px]"}
         paddingForIcon={"top-5 right-5"}
         onChange={onChange}

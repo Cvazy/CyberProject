@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { LoginForm } from "features";
+import { LoginForm, RegisterForm } from "features";
+import { useMatch } from "react-router-dom";
 
 const AuthPage = () => {
   const { t } = useTranslation();
+  const checkAuthPage = !!useMatch("/login");
 
   return (
     <div className={"w-full h-full py-10 md:py-14 lg:py-20 xl:py-28"}>
@@ -25,10 +27,10 @@ const AuthPage = () => {
               >
                 <div className={"flex flex-col items-start gap-10 w-full"}>
                   <h1 className={"text-xl text-left text-black font-bold"}>
-                    {t("Authorization")}
+                    {t(checkAuthPage ? "Authorization" : "Registration")}
                   </h1>
 
-                  <LoginForm />
+                  {checkAuthPage ? <LoginForm /> : <RegisterForm />}
                 </div>
               </div>
             </div>
