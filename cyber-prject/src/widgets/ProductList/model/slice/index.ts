@@ -17,30 +17,37 @@ export const ProductListSlice = createSlice({
   name: "ProductList",
   initialState: initialProductListState,
   reducers: {
-    setFavoriteProduct(state, action: PayloadAction<number>) {
+    setFavoriteProduct(
+      state,
+      action: PayloadAction<{ productId: number; userId: number }>,
+    ) {
+      const { productId, userId } = action.payload;
+
       state.productsData = state.productsData.map((product) =>
-        product.id === action.payload
+        product.id === productId
           ? { ...product, favorite: !product.favorite }
           : product,
       );
 
       let favoriteProducts =
-        JSON.parse(localStorage.getItem("favoriteProducts") || "") || [];
+        JSON.parse(
+          localStorage.getItem(`favoriteProducts-${userId}`) || "[]",
+        ) || [];
 
       const changedProduct = state.productsData.find(
-        (product) => product.id === action.payload,
+        (product) => product.id === productId,
       ) as ProductSchema;
 
       if (changedProduct?.favorite) {
         favoriteProducts.push(changedProduct);
       } else {
         favoriteProducts = favoriteProducts.filter(
-          (product: ProductSchema) => product.id !== action.payload,
+          (product: ProductSchema) => product.id !== productId,
         );
       }
 
       localStorage.setItem(
-        "favoriteProducts",
+        `favoriteProducts-${userId}`,
         JSON.stringify(favoriteProducts),
       );
     },

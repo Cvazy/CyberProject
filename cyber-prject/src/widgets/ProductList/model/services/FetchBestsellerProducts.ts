@@ -5,13 +5,13 @@ import mergeFavoriteProducts from "../utils/mergeFavoriteProducts";
 
 export const FetchBestsellerProducts = createAsyncThunk(
   "ProductList/FetchBestsellerProducts",
-  async (_, { dispatch, rejectWithValue }) => {
+  async (userId: number, { dispatch, rejectWithValue }) => {
     try {
       const response = await axios.get(
         `${serverUrl}/products?state=Bestseller`,
       );
 
-      return mergeFavoriteProducts(response.data);
+      return mergeFavoriteProducts(response.data, userId);
     } catch (error: any) {
       return rejectWithValue(error.response.data.message);
     }

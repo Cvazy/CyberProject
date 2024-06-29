@@ -4,10 +4,16 @@ import { useTranslation } from "react-i18next";
 import { ProductCard } from "../../../entities";
 import { ProductSchema } from "../../../widgets/ProductList/model";
 import { useLocalStorage } from "app/hooks";
+import { useAppSelector } from "../../../app/providers/StoreProvider/hooks";
 
 const WishlistBlock: FC<UserSchema> = ({ authData }) => {
   const { t } = useTranslation("profilePage");
-  const [productsData, removeProduct] = useLocalStorage("favoriteProducts", []);
+  const user = useAppSelector((state) => state.userReducer.authData);
+  const userId = user?.id;
+  const [productsData, removeProduct] = useLocalStorage(
+    `favoriteProducts-${userId}`,
+    [],
+  );
 
   return (
     <div className={"flex flex-col gap-6 w-full"}>

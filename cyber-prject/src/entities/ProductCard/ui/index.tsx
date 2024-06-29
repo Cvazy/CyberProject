@@ -2,10 +2,13 @@ import { ProductListActions, ProductSchema } from "widgets/ProductList/model";
 import { Button, Icon } from "shared/ui";
 import FavoriteIcon from "shared/assets/images/Icon/favorite.svg";
 import ProductWishlistIcon from "shared/assets/images/Icon/product_wishlist.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import { useAppDispatch } from "../../../app/providers/StoreProvider/hooks";
+import {
+  useAppDispatch,
+  useAppSelector,
+} from "../../../app/providers/StoreProvider/hooks";
 import { LoaderTwister } from "../../../shared/ui/Loader/LoaderTwister";
 
 interface ProductCardType {
@@ -17,10 +20,15 @@ export const ProductCard = ({ product, onRemove }: ProductCardType) => {
   const { id, name, price, sale, imageUrl, favorite } = product;
 
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const { t } = useTranslation();
   const nameRef = useRef(null);
   const [isImageLoaded, setImageLoaded] = useState(false);
+
+  const user = useAppSelector((state) => state.userReducer.authData);
+
+  const userId = user?.id;
 
   const handleImageLoad = () => {
     setImageLoaded(true);
@@ -46,8 +54,19 @@ export const ProductCard = ({ product, onRemove }: ProductCardType) => {
     }
   }, [name]);
 
-  const onFavoriteClick = (productId: number) => {
-    dispatch(ProductListActions.setFavoriteProduct(productId));
+  const onFavoriteClick = (productId: number | undefined) => {
+    if (productId === undefined) {
+      console.error("productId is undefined");
+      return;
+    }
+
+    if (userId === undefined) {
+      console.error("userId is undefined");
+      navigate("/login");
+      return;
+    }
+
+    dispatch(ProductListActions.setFavoriteProduct({ productId, userId }));
 
     if (onRemove) {
       onRemove(productId);

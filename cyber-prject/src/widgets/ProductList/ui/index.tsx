@@ -19,16 +19,19 @@ export const ProductCategoriesOnIndex = () => {
     (state) => state.ProductListReducer,
   );
 
+  const user = useAppSelector((state) => state.userReducer.authData);
+  const userId = user?.id;
+
   const [newArrivalStatus, setNewArrivalStatus] = useState(true);
   const [bestsellerStatus, setBestsellerStatus] = useState(false);
   const [featuredStatus, setFeaturedStatus] = useState(false);
 
   useEffect(() => {
-    dispatch(FetchNewArrivalProducts());
-  }, [dispatch]);
+    dispatch(FetchNewArrivalProducts(userId || NaN));
+  }, [dispatch, userId]);
 
   const onLoadNewArrival = () => {
-    dispatch(FetchNewArrivalProducts());
+    dispatch(FetchNewArrivalProducts(userId || NaN));
 
     setNewArrivalStatus(true);
     setBestsellerStatus(false);
@@ -36,7 +39,7 @@ export const ProductCategoriesOnIndex = () => {
   };
 
   const onLoadBestseller = () => {
-    dispatch(FetchBestsellerProducts());
+    dispatch(FetchBestsellerProducts(userId || NaN));
 
     setNewArrivalStatus(false);
     setBestsellerStatus(true);
@@ -44,7 +47,7 @@ export const ProductCategoriesOnIndex = () => {
   };
 
   const onLoadFeatured = () => {
-    dispatch(FetchFeaturedProducts());
+    dispatch(FetchFeaturedProducts(userId || NaN));
 
     setNewArrivalStatus(false);
     setBestsellerStatus(false);

@@ -23,22 +23,6 @@ export const userSlice = createSlice({
       state.authData = undefined;
       localStorage.removeItem(LOCALSTORAGE_USER_KEY);
     },
-
-    setUserName: (state, action: PayloadAction<string>) => {
-      state.authData && (state.authData.name = action.payload);
-    },
-
-    // setUserSurname: (state, action: PayloadAction<string>) => {
-    //   state.newUserData.surname = action.payload;
-    // },
-    //
-    // setUserPatronymic: (state, action: PayloadAction<string>) => {
-    //   state.newUserData.patronymic = action.payload;
-    // },
-    //
-    // setUserBirthday: (state, action: PayloadAction<string>) => {
-    //   state.newUserData.birthday = action.payload;
-    // },
   },
 });
 
