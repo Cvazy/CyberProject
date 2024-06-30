@@ -4,7 +4,9 @@ import SmallBannerReducer from "entities/SmallerBanners/model/slice";
 import CategoriesReducer from "entities/ShopCategories/model/slice";
 import { loginReducer, updateUserDataReducer, registerReducer } from "features";
 import { userReducer } from "entities/User";
-import { ProductListReducer } from "../../../../widgets/ProductList/model";
+import { ProductListReducer } from "widgets/ProductList/model";
+import { AboutDataSliceReducer } from "pages/AboutPage";
+import { ContactDataSliceReducer } from "pages/ContactPage/model";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -15,4 +17,6 @@ export const rootReducer = combineReducers({
   userReducer,
   updateUserDataReducer,
   ProductListReducer,
+  AboutDataSliceReducer,
+  ContactDataSliceReducer,
 });

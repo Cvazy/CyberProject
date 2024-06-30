@@ -26,7 +26,9 @@ export const MainBanner = () => {
   return (
     <div className={"w-full h-full bg-[#211C24] px-4"}>
       <div className={"flex items-center justify-center w-full h-full"}>
-        <div className={"max-w-[1120px] w-full h-full self-end relative"}>
+        <div
+          className={"max-w-[1120px] min-h-96 w-full h-full self-end relative"}
+        >
           <FetchErrorWrap error={error} isLoading={isLoading}>
             <Swiper
               //@ts-ignore
