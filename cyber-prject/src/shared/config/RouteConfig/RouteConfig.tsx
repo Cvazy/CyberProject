@@ -1,7 +1,9 @@
 import { RouteProps } from "react-router-dom";
 import {
+  AboutPage,
   AuthPage,
   CatalogPage,
+  ContactPage,
   MainPage,
   OrderPage,
   ProductPage,
@@ -9,6 +11,8 @@ import {
 } from "pages";
 
 export enum AppRoutes {
+  ABOUT = "about",
+  CONTACT = "contacts",
   MAIN = "main",
   LOGIN = "login",
   REGISTER = "register",
@@ -30,6 +34,8 @@ export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.ORDER]: "/order",
   [AppRoutes.PROFILE]: "/profile",
   [AppRoutes.WISHLIST]: "/wishlist",
+  [AppRoutes.ABOUT]: "/about",
+  [AppRoutes.CONTACT]: "/contacts",
 };
 
 export const RouteConfig: Record<AppRoutes, RouteProps> = {
@@ -76,5 +82,15 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.WISHLIST]: {
     path: RoutePaths.wishlist,
     element: <LkPage />,
+  },
+
+  [AppRoutes.ABOUT]: {
+    path: RoutePaths.about,
+    element: <AboutPage />,
+  },
+
+  [AppRoutes.CONTACT]: {
+    path: RoutePaths.contacts,
+    element: <ContactPage />,
   },
 };

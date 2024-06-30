@@ -41,7 +41,7 @@ export const NavLinks = ({
       </NavLink>
 
       <NavLink
-        to={"/contact"}
+        to={"/contacts"}
         className={({ isActive }) =>
           ["nav_link", isActive ? "active_nav_link" : "inactive_nav_link"].join(
             " ",
@@ -53,7 +53,7 @@ export const NavLinks = ({
       </NavLink>
 
       <NavLink
-        to={"/blog"}
+        to={"/catalog"}
         className={({ isActive }) =>
           ["nav_link", isActive ? "active_nav_link" : "inactive_nav_link"].join(
             " ",
@@ -61,7 +61,7 @@ export const NavLinks = ({
         }
         onClick={() => setMobileMenuVisible(false)}
       >
-        {t("Blog")}
+        {t("Catalog")}
       </NavLink>
     </div>
   );
