@@ -16,7 +16,7 @@ export const RegisterNewUser = createAsyncThunk(
     { dispatch, rejectWithValue },
   ) => {
     try {
-      const response = await axios.post(`${serverUrl}/usekjnrs`, {
+      const response = await axios.post(`${serverUrl}/users`, {
         username,
         password,
       });

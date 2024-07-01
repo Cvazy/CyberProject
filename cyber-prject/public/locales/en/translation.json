@@ -54,5 +54,15 @@
   "Non ho un account": "Non ho un account",
   "Registration": "Registration",
   "Already have an account": "Already have an account",
-  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas."
+  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.",
+  "Please fill in your username": "Please fill in your username",
+  "The username was filled in incorrectly. Only letters and numbers are allowed": "The username was filled in incorrectly. Only letters and numbers are allowed",
+  "The username was filled in incorrectly. The minimum login length is 3 characters": "The username was filled in incorrectly. The minimum login length is 3 characters",
+  "The username was filled in incorrectly. The maximum login length is 15 characters": "The username was filled in incorrectly. The maximum login length is 15 characters",
+  "Please fill in the password": "Please fill in the password",
+  "The password was filled in incorrectly. Letters, numbers and symbols are allowed # %": "The password was filled in incorrectly. Letters, numbers and symbols are allowed # %",
+  "The password was filled in incorrectly. The minimum password length is 6 characters": "The password was filled in incorrectly. The minimum password length is 6 characters",
+  "The password was filled in incorrectly. The maximum password length is 30 characters": "The password was filled in incorrectly. The maximum password length is 30 characters",
+  "Please repeat the password": "Please repeat the password",
+  "Passwords don't match": "Passwords don't match"
 }

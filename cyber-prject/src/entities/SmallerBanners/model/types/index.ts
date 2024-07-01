@@ -1,4 +1,5 @@
 interface ISmallBanner {
+  id: string;
   title: string;
   subtitle: string;
   description: string;

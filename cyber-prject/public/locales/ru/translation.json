@@ -54,5 +54,15 @@
   "Non ho un account": "Ещё нет аккаунта",
   "Registration": "Регистрация",
   "Already have an account": "Уже есть аккаунт",
-  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Успейте приобрести новую электронику с вкусной скидкой и бесплатной доставкой."
+  "Tempus habent novas electronicas mercandi cum delectamento infringo et naviculas liberas.": "Успейте приобрести новую электронику с вкусной скидкой и бесплатной доставкой.",
+  "Please fill in your username": "Пожалуйста, заполните логин",
+  "The username was filled in incorrectly. Only letters and numbers are allowed": "Неверно заполнен логин. Допускаются только буквы и цифры",
+  "The username was filled in incorrectly. The minimum login length is 3 characters": "Неверно заполнен логин. Минимальная длина логина 3 символа",
+  "The username was filled in incorrectly. The maximum login length is 15 characters": "Неверно заполнен логин. Максимальная длина логина 15 символов",
+  "Please fill in the password": "Пожалуйста, заполните пароль",
+  "The password was filled in incorrectly. Letters, numbers and symbols are allowed # %": "Неверно заполнен пароль. Допускаются буквы, цифры и символы # %",
+  "The password was filled in incorrectly. The minimum password length is 6 characters": "Неверно заполнен пароль. Минимальная длина пароля 6 символов",
+  "The password was filled in incorrectly. The maximum password length is 30 characters": "Неверно заполнен пароль. Максимальная длина пароля 30 символов",
+  "Please repeat the password": "Пожалуйста, повторите пароль",
+  "Passwords don't match": "Пароли не совпадают"
 }

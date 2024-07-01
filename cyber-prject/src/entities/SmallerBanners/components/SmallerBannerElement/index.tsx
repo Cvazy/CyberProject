@@ -3,25 +3,10 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../../../shared/ui";
 import { LoaderTwister } from "../../../../shared/ui/Loader/LoaderTwister";
-
-interface ISmallBanner {
-  title: string;
-  subtitle: string;
-  description: string;
-  imageSrc: string;
-}
-
-interface ISmallerBannerElement {
-  bgColor: string;
-  hoverEffect: boolean;
-  titleClass: string;
-  subtitleClass: string;
-  imageSize: string;
-  smallBanner: ISmallBanner;
-}
+import { SmallBannersTypes } from "../../model/types";
 
 interface Data {
-  data: ISmallerBannerElement;
+  data: SmallBannersTypes;
 }
 
 export const SmallerBannerElement: FC<Data> = ({ data }) => {
@@ -62,7 +47,10 @@ export const SmallerBannerElement: FC<Data> = ({ data }) => {
         </p>
 
         {!hoverEffect && (
-          <Link to={`/catalog`} className={"w-full lg:w-auto"}>
+          <Link
+            to={`/product?id=${smallBanner.id}`}
+            className={"w-full lg:w-auto"}
+          >
             <Button
               className={
                 "w-full h-56 text-black border-black px-56 lg:w-auto hover:bg-[#353535] hover:text-white"
@@ -96,7 +84,7 @@ export const SmallerBannerElement: FC<Data> = ({ data }) => {
   );
 
   return hoverEffect ? (
-    <Link to="/product" className={stylesForWrap}>
+    <Link to={`/product?id=${smallBanner.id}`} className={stylesForWrap}>
       {content}
     </Link>
   ) : (

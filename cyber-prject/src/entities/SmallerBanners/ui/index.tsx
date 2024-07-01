@@ -18,7 +18,7 @@ export const SmallerBanners = () => {
   }, [dispatch]);
 
   return (
-    <div className={"w-full h-full min-h-[34rem]"}>
+    <div className={`w-full h-full ${isLoading ? "min-h-[34rem]" : ""}`}>
       <FetchErrorWrap error={error} isLoading={isLoading}>
         {smallBanners && smallBanners.length > 0 && (
           <div className={"grid w-full lg:grid-cols-2"}>

@@ -6,8 +6,7 @@ import {
   useAppDispatch,
   useAppSelector,
 } from "app/providers/StoreProvider/hooks";
-import { loginActions } from "../../model";
-import { LoginByUsername } from "../../model/services";
+import { loginActions, LoginByUsername } from "../../model";
 import { Link, useNavigate } from "react-router-dom";
 
 export const LoginForm = memo(() => {

@@ -1,5 +1,5 @@
 import searchIcon from "../../assets/images/Icon/search.svg";
-import {
+import React, {
   forwardRef,
   HTMLAttributes,
   useImperativeHandle,

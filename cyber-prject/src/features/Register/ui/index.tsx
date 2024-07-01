@@ -8,8 +8,64 @@ import {
 } from "app/providers/StoreProvider/hooks";
 import { useCallback, useEffect } from "react";
 import { registerActions, RegisterNewUser } from "../model";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+const regFormScheme = yup.object().shape({
+  username: yup
+    .string()
+    .required("Please fill in your username")
+    .matches(
+      /^\w+$/,
+      "The username was filled in incorrectly. Only letters and numbers are allowed",
+    )
+    .min(
+      3,
+      "The username was filled in incorrectly. The minimum login length is 3 characters",
+    )
+    .max(
+      15,
+      "The username was filled in incorrectly. The maximum login length is 15 characters",
+    ),
+
+  password: yup
+    .string()
+    .required("Please fill in the password")
+    .matches(
+      /^[\w#%]+$/,
+      "The password was filled in incorrectly. Letters, numbers and symbols are allowed # %",
+    )
+    .min(
+      6,
+      "The password was filled in incorrectly. The minimum password length is 6 characters",
+    )
+    .max(
+      30,
+      "The password was filled in incorrectly. The maximum password length is 30 characters",
+    ),
+
+  repeatPassword: yup
+    .string()
+    .required("Please repeat the password")
+    .oneOf([yup.ref("password"), ""], "Passwords don't match"),
+});
 
 export const RegisterForm = () => {
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      username: "",
+      password: "",
+      repeatPassword: "",
+    },
+    resolver: yupResolver(regFormScheme),
+  });
+
   const { t } = useTranslation();
   const navigate = useNavigate();
   const authData = useAppSelector((state) => state.userReducer.authData);
@@ -21,25 +77,28 @@ export const RegisterForm = () => {
   const onChangeLogin = useCallback(
     (value: string) => {
       dispatch(registerActions.setLogin(value));
+      setValue("username", value);
     },
-    [dispatch],
+    [dispatch, setValue],
   );
 
   const onChangePassword = useCallback(
     (value: string) => {
       dispatch(registerActions.setPassword(value));
+      setValue("password", value);
     },
-    [dispatch],
+    [dispatch, setValue],
   );
 
   const onChangeRepeatPassword = useCallback(
     (value: string) => {
       dispatch(registerActions.setRepeatPassword(value));
+      setValue("repeatPassword", value);
     },
-    [dispatch],
+    [dispatch, setValue],
   );
 
-  const onRegisterClick = useCallback(() => {
+  const onSubmitRegister = useCallback(() => {
     dispatch(RegisterNewUser({ username, password }));
   }, [dispatch, username, password]);
 
@@ -49,11 +108,23 @@ export const RegisterForm = () => {
     }
   }, [authData, navigate]);
 
+  const formError =
+    errors?.username?.message ||
+    errors?.password?.message ||
+    errors?.repeatPassword?.message;
+
+  const errorMessage = formError || error;
+
   return (
-    <div className={"flex flex-col gap-12 w-full"}>
+    <form
+      onSubmit={handleSubmit(onSubmitRegister)}
+      className={"flex flex-col gap-12 w-full"}
+    >
       <div className={"flex flex-col gap-6 w-full"}>
-        {error && (
-          <p className={"text-base font-medium text-[#c73131]"}>{t(error)}</p>
+        {errorMessage && (
+          <p className={"text-base font-medium text-[#c73131]"}>
+            {t(errorMessage)}
+          </p>
         )}
 
         <label
@@ -64,11 +135,12 @@ export const RegisterForm = () => {
           {t("Enter your login")}
           <Input
             icon={false}
-            name={"login"}
+            // name={"login"}
             placeholder={"Login..."}
             className={"bg-white py-4 pl-12 pr-3 h-[56px]"}
-            onChange={onChangeLogin}
             value={username}
+            {...register("username")}
+            onChange={onChangeLogin}
           />
         </label>
 
@@ -78,7 +150,12 @@ export const RegisterForm = () => {
           }
         >
           {t("Enter your password")}
-          <PasswordInput onChange={onChangePassword} value={password} />
+          <PasswordInput
+            // name={"password"}
+            value={password}
+            {...register("password")}
+            onChange={onChangePassword}
+          />
         </label>
 
         <label
@@ -88,9 +165,11 @@ export const RegisterForm = () => {
         >
           {t("Repeat your password")}
           <PasswordInput
+            // name={"repeatPassword"}
             repeatPass={true}
-            onChange={onChangeRepeatPassword}
             value={repeatPassword}
+            {...register("repeatPassword")}
+            onChange={onChangeRepeatPassword}
           />
         </label>
       </div>
@@ -101,7 +180,6 @@ export const RegisterForm = () => {
           className={
             "h-56 text-white bg-black border-black px-56 w-full hover:bg-white hover:text-black disabled:opacity-50 disabled:cursor-no-drop"
           }
-          onClick={onRegisterClick}
           disabled={isLoading}
         >
           {t("Register")}
@@ -118,6 +196,6 @@ export const RegisterForm = () => {
           </Link>
         </p>
       </div>
-    </div>
+    </form>
   );
 };

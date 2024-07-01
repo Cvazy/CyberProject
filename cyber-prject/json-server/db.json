@@ -19,6 +19,16 @@
       "username": "testUserName",
       "password": "test",
       "id": 4
+    },
+    {
+      "username": "ivanLogin",
+      "password": "ivanPassword",
+      "id": 5
+    },
+    {
+      "username": "ivanUserName",
+      "password": "ivanPassword7712",
+      "id": 6
     }
   ],
   "profiles": [
@@ -50,6 +60,20 @@
       "surname": "",
       "patronymic": "",
       "id": 4
+    },
+    {
+      "username": "ivanLogin",
+      "name": "",
+      "surname": "",
+      "patronymic": "",
+      "id": 5
+    },
+    {
+      "username": "ivanUserName",
+      "name": "",
+      "surname": "",
+      "patronymic": "",
+      "id": 6
     }
   ],
   "mainBanners": [
@@ -58,7 +82,7 @@
       "model": "IPhone 14",
       "version": "Pro",
       "subtitle": "Created to change everything for the better. For everyone",
-      "productId": "020",
+      "productId": "26",
       "imagePath": "https://i.ibb.co/RNtgdnz/iphone-banner.png"
     },
     {
@@ -66,7 +90,7 @@
       "model": "MacBook",
       "version": "Pro",
       "subtitle": "It will be an excellent tool for real professionals",
-      "productId": "030",
+      "productId": "34",
       "imagePath": "https://i.ibb.co/XpzVtWS/MacBook.png"
     },
     {
@@ -74,7 +98,7 @@
       "model": "AirPods",
       "version": "Max",
       "subtitle": "Incredible sound, immersing in a completely new reality",
-      "productId": "040",
+      "productId": "1",
       "imagePath": "https://i.ibb.co/wSkbsp7/airpods-max.png"
     }
   ],
@@ -86,6 +110,7 @@
       "subtitleClass": "font-medium",
       "imageSize": "max-w-[330px] max-h-[377px]",
       "smallBanner": {
+        "id": "32",
         "title": "Playstation",
         "subtitle": "5",
         "description": "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
@@ -99,6 +124,7 @@
       "subtitleClass": "font-medium lg:block",
       "imageSize": "max-w-[245px] max-h-[272px]",
       "smallBanner": {
+        "id": "1",
         "title": "Apple AirPods",
         "subtitle": "Max",
         "description": "Computational audio. Listen, it's powerful",
@@ -112,6 +138,7 @@
       "subtitleClass": "font-medium lg:block",
       "imageSize": "max-w-[330px] max-h-[190px]",
       "smallBanner": {
+        "id": "33",
         "title": "Apple Vision",
         "subtitle": "Pro",
         "description": "An immersive way to experience entertainment",
@@ -125,8 +152,9 @@
       "subtitleClass": "font-medium",
       "imageSize": "max-h-[502px] max-w-[830px]",
       "smallBanner": {
+        "id": "34",
         "title": "Macbook",
-        "subtitle": "Air",
+        "subtitle": "Pro",
         "description": "The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.",
         "imageSrc": "https://i.ibb.co/5sC6XzJ/MacBook.png"
       }
