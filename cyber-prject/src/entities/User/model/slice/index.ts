@@ -19,9 +19,18 @@ export const userSlice = createSlice({
         state.authData = JSON.parse(user);
       }
     },
+
     logout(state) {
       state.authData = undefined;
       localStorage.removeItem(LOCALSTORAGE_USER_KEY);
+    },
+
+    addProductToCart(state, action: PayloadAction<string>) {
+      if (state.authData?.cart) {
+        state.authData.cart.push(action.payload);
+      } else {
+        state.authData = { ...state.authData, cart: [action.payload] };
+      }
     },
   },
 });

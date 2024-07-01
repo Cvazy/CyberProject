@@ -7,6 +7,7 @@ import { userReducer } from "entities/User";
 import { ProductListReducer } from "widgets/ProductList/model";
 import { AboutDataSliceReducer } from "pages/AboutPage";
 import { ContactDataSliceReducer } from "pages/ContactPage/model";
+import { productReducer } from "pages/ProductPage/model";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -19,4 +20,5 @@ export const rootReducer = combineReducers({
   ProductListReducer,
   AboutDataSliceReducer,
   ContactDataSliceReducer,
+  productReducer,
 });

@@ -3,7 +3,12 @@
     {
       "id": 1,
       "username": "admin",
-      "password": "adminPassword"
+      "password": "adminPassword",
+      "cart": [
+        "4",
+        "5",
+        "23"
+      ]
     },
     {
       "username": "newUser",
@@ -445,6 +450,15 @@
       "imageUrl": "https://i.ibb.co/gP8QKpW/image-41.png",
       "price": 1699,
       "state": "Featured Products"
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
     }
   ],
   "about": [
