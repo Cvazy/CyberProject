@@ -1,11 +1,10 @@
 import { ProfileSidebar } from "../components";
 import { useMatch, useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
-import { CartBlock, ProfileBlock, WishlistBlock } from "pages";
+import { ProfileBlock, WishlistBlock } from "pages";
 import { useAppSelector } from "../../../app/providers/StoreProvider/hooks";
 
 const LkPage = () => {
-  const checkCartPage = !!useMatch("/cart");
   const checkProfilePage = !!useMatch("/profile");
   const checkWishlistPage = !!useMatch("/wishlist");
 
@@ -27,7 +26,6 @@ const LkPage = () => {
             <ProfileSidebar />
 
             <div className={"w-full"}>
-              {checkCartPage && <CartBlock authData={authData} />}
               {checkProfilePage && <ProfileBlock />}
               {checkWishlistPage && <WishlistBlock authData={authData} />}
             </div>

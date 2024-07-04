@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { serverUrl } from "app/constants";
-import { LOCALSTORAGE_USER_KEY } from "shared/const/localstorage";
+import { LOCALSTORAGE_USER_KEY } from "shared/const";
 import { ProfileSchema } from "../../types";
 
 interface RootState {

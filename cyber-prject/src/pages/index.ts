@@ -1,6 +1,6 @@
 export * from "./AboutPage";
 export * from "./AuthPage";
-export * from "./CartBlock";
+export * from "./CartPage";
 export * from "./CatalogPage";
 export * from "./ContactPage";
 export * from "./LkPage";

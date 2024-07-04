@@ -2,6 +2,7 @@ import { RouteProps } from "react-router-dom";
 import {
   AboutPage,
   AuthPage,
+  CartPage,
   CatalogPage,
   ContactPage,
   MainPage,
@@ -13,12 +14,12 @@ import {
 export enum AppRoutes {
   ABOUT = "about",
   CONTACT = "contacts",
+  CART = "cart",
   MAIN = "main",
   LOGIN = "login",
   REGISTER = "register",
   CATALOG = "catalog",
   PRODUCT = "product",
-  CART = "cart",
   ORDER = "order",
   PROFILE = "profile",
   WISHLIST = "wishlist",
@@ -66,7 +67,7 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
 
   [AppRoutes.CART]: {
     path: RoutePaths.cart,
-    element: <LkPage />,
+    element: <CartPage />,
   },
 
   [AppRoutes.ORDER]: {

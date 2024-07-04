@@ -22,6 +22,10 @@ export const AddToCart = createAsyncThunk(
     { dispatch, getState, rejectWithValue },
   ) => {
     try {
+      const cartElement = {
+        [productId]: 1,
+      };
+
       const state = getState();
       let userCart = (state as RootState).userReducer.authData.cart || [];
 
@@ -29,13 +33,13 @@ export const AddToCart = createAsyncThunk(
         userCart = [];
       }
 
-      const updatedCart = [...userCart, productId];
+      const updatedCart = [...userCart, cartElement];
 
       const response = await axios.patch(`${serverUrl}/users/${userId}`, {
         cart: updatedCart,
       });
 
-      dispatch(userActions.addProductToCart(productId));
+      dispatch(userActions.addProductToCart(cartElement));
 
       return response.data;
     } catch (error: any) {

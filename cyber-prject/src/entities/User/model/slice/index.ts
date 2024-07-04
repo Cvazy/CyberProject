@@ -1,6 +1,6 @@
 import { User, UserSchema } from "../types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { LOCALSTORAGE_USER_KEY } from "../../../../shared/const/localstorage";
+import { LOCALSTORAGE_USER_KEY } from "shared/const";
 
 const initialState: UserSchema = {};
 
@@ -25,7 +25,13 @@ export const userSlice = createSlice({
       localStorage.removeItem(LOCALSTORAGE_USER_KEY);
     },
 
-    addProductToCart(state, action: PayloadAction<string>) {
+    initUserCart(state, action) {
+      if (state.authData?.cart) {
+        state.authData.cart = action.payload;
+      }
+    },
+
+    addProductToCart(state, action) {
       if (state.authData?.cart) {
         state.authData.cart.push(action.payload);
       } else {
