@@ -11,7 +11,7 @@ interface PasswordInputProps {
 }
 
 export const PasswordInput = forwardRef(
-  ({ value, onChange, repeatPass, name }: PasswordInputProps) => {
+  ({ value, onChange, repeatPass, name }: PasswordInputProps, ref) => {
     const [inputType, setInputType] = useState("password");
 
     const handleChangeInputType = () => {
@@ -21,6 +21,7 @@ export const PasswordInput = forwardRef(
     return (
       <div className={"relative w-full"}>
         <Input
+          ref={ref}
           icon={false}
           type={inputType}
           name={name}

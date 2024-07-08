@@ -1,7 +1,12 @@
 import PlusIcon from "shared/assets/images/Icon/plus.svg";
 import MinusIcon from "shared/assets/images/Icon/minus.svg";
 import RemoveIcon from "shared/assets/images/Icon/close.svg";
-import { CartElementType } from "../../../model";
+import {
+  CartElementType,
+  ChangeProductQnt,
+  RemoveProductFromCart,
+} from "../../../model";
+import { useAppDispatch } from "app/providers/StoreProvider/hooks";
 
 interface CartElementProps {
   product: CartElementType;
@@ -9,6 +14,21 @@ interface CartElementProps {
 
 export const CartElement = ({ product }: CartElementProps) => {
   const { id, imageUrl, quantity, name, price } = product;
+  const dispatch = useAppDispatch();
+
+  const productId = id.toString();
+
+  const onRemoveProduct = () => {
+    dispatch(RemoveProductFromCart(productId));
+  };
+
+  const onIncrementProductQnt = () => {
+    dispatch(ChangeProductQnt({ productId, action: "increment" }));
+  };
+
+  const onDecrementProductQnt = () => {
+    dispatch(ChangeProductQnt({ productId, action: "decrement" }));
+  };
 
   return (
     <div className={"border-b border-solid border-[#A3A3A3] pb-10 w-full"}>
@@ -67,6 +87,7 @@ export const CartElement = ({ product }: CartElementProps) => {
                 >
                   <img
                     src={MinusIcon}
+                    onClick={onDecrementProductQnt}
                     className={"w-6 h-6"}
                     alt={"Delete"}
                     loading={"lazy"}
@@ -90,6 +111,7 @@ export const CartElement = ({ product }: CartElementProps) => {
 
                 <button
                   type={"button"}
+                  onClick={onIncrementProductQnt}
                   className={
                     "flex items-center justify-center bg-none rounded w-6 h-6 hover:border-[#D9D9D9] hover:border hover:border-solid"
                   }
@@ -110,6 +132,7 @@ export const CartElement = ({ product }: CartElementProps) => {
 
               <button
                 type={"button"}
+                onClick={onRemoveProduct}
                 className={
                   "flex items-center justify-center bg-none rounded w-7 h-7 hover:border-[#D9D9D9] hover:border hover:border-solid"
                 }

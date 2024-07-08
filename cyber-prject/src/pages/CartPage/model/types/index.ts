@@ -8,3 +8,11 @@ export interface CartElementType {
   favorite?: boolean;
   quantity: number;
 }
+
+export interface CartSchema {
+  isLoading: boolean;
+  error?: string;
+  promoCodeIsLoading: boolean;
+  promoCodeSale?: number;
+  promoCodeError?: string;
+}

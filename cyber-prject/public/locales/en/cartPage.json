@@ -4,13 +4,15 @@
   "Checkout": "Checkout",
   "Discount code / Promo code": "Discount code / Promo code",
   "Code": "Code",
-  "Your bonus card number": "Your bonus card number",
-  "Enter Card Number": "Enter Card Number",
   "Apply": "Apply",
   "Subtotal": "Subtotal",
   "Estimated Tax": "Estimated Tax",
   "Estimated shipping & Handling": "Estimated shipping & Handling",
   "Total": "Total",
   "Your shopping cart is still empty": "Your shopping cart is still empty",
-  "Ready for shopping": "Ready for shopping"
+  "Ready for shopping": "Ready for shopping",
+  "The data about the shopping cart could not be retrieved": "The data about the shopping cart could not be retrieved",
+  "An error occurred when deleting the product": "An error occurred when deleting the product",
+  "An unexpected error occurred when changing the quantity of the product": "An unexpected error occurred when changing the quantity of the product",
+  "Erroneous or non-existent code": "Erroneous or non-existent code"
 }

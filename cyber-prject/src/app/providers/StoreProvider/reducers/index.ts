@@ -8,6 +8,7 @@ import { ProductListReducer } from "widgets/ProductList/model";
 import { AboutDataSliceReducer } from "pages/AboutPage";
 import { ContactDataSliceReducer } from "pages/ContactPage/model";
 import { productReducer } from "pages/ProductPage/model";
+import { cartReducer } from "pages/CartPage/model";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -21,4 +22,5 @@ export const rootReducer = combineReducers({
   AboutDataSliceReducer,
   ContactDataSliceReducer,
   productReducer,
+  cartReducer,
 });
