@@ -19,6 +19,9 @@
         },
         {
           "31": 1
+        },
+        {
+          "23": 3
         }
       ]
     },
@@ -231,7 +234,17 @@
       "imageUrl": "https://i.ibb.co/fN4YRyP/Air-Pods-Max.png",
       "price": 549,
       "sale": 20,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "AirPods Max",
+      "color": "#E8E8E8",
+      "modification": null,
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 2,
@@ -239,120 +252,416 @@
       "imageUrl": "https://i.ibb.co/tBzTdL7/Apple-Watch.png",
       "price": 399,
       "sale": 35,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Apple Watch Series 9 GPS 41mm",
+      "color": "#E8E8E8",
+      "modification": "41mm",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 3,
       "name": "Blackmagic Pocket Cinema Camera 6k",
       "imageUrl": "https://i.ibb.co/zxQJ5pk/Camera.png",
       "price": 2535,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Blackmagic Pocket Cinema Camera 6k",
+      "color": "#E8E8E8",
+      "modification": "6k",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 4,
-      "name": "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
+      "name": "Galaxy Z Fold5 | 256GB | Phantom Black",
       "imageUrl": "https://i.ibb.co/qRhsXHG/Galaxy.png",
       "price": 1799,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Galaxy Z Fold5",
+      "color": "#00000",
+      "modification": "256GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 5,
       "name": "Galaxy Buds FE Graphite",
       "imageUrl": "https://i.ibb.co/4pXYqCc/Galaxy-Buds.png",
       "price": 549,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Galaxy Buds FE",
+      "color": "#525154",
+      "modification": null,
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 6,
       "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
       "price": 99.99,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Apple iPad 9 10.2",
+      "color": "#E8E8E8",
+      "modification": "64GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 7,
       "name": "Apple iPad 9 10.2\" 128GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
-      "price": 398
+      "price": 398,
+      "deviceFamily": "Apple iPad 9 10.2",
+      "color": "#E8E8E8",
+      "modification": "128GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 8,
       "name": "Apple iPad 9 10.2\" 256GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
       "price": 579,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPad 9 10.2",
+      "color": "#E8E8E8",
+      "modification": "256GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 9,
       "name": "Apple iPad 9 10.2\" 512GB Wi-Fi Silver (MK2L3) 2021",
       "imageUrl": "https://i.ibb.co/BP7gdNS/Ipad.png",
-      "price": 899
+      "price": 899,
+      "deviceFamily": "Apple iPad 9 10.2",
+      "color": "#E8E8E8",
+      "modification": "512GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 10,
       "name": "Apple iPhone 11 64GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
-      "price": 510
+      "price": 510,
+      "deviceFamily": "Apple iPhone 11",
+      "color": "#E8E8E8",
+      "modification": "64GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 11,
       "name": "Apple iPhone 11 128GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
       "price": 649,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPhone 11",
+      "color": "#E8E8E8",
+      "modification": "128GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 12,
       "name": "Apple iPhone 11 256GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
       "price": 799,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 11",
+      "color": "#E8E8E8",
+      "modification": "256GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 13,
       "name": "Apple iPhone 11 512GB White (MQ233)",
       "imageUrl": "https://i.ibb.co/F6hvCJj/Iphone11-White.png",
-      "price": 949
+      "price": 949,
+      "deviceFamily": "Apple iPhone 11",
+      "color": "#E8E8E8",
+      "modification": "512GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 14,
       "name": "Apple iPhone 13 mini 128GB Pink (MLK23)",
       "imageUrl": "https://i.ibb.co/dBzSgfv/Iphone13-Mini.png",
       "price": 850,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPhone 13 mini",
+      "color": "#F7DBD5",
+      "modification": "128GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 15,
       "name": "Apple iPhone 13 mini 256GB Pink (MLK23)",
       "imageUrl": "https://i.ibb.co/dBzSgfv/Iphone13-Mini.png",
       "price": 1049,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 13 mini",
+      "color": "#F7DBD5",
+      "modification": "256GB",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 16,
       "name": "Apple iPhone 14 Pro 128GB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
       "price": 1399,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#00000",
+      "modification": "128GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 17,
       "name": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
-      "price": 1499
+      "price": 1499,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#00000",
+      "modification": "256GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 18,
       "name": "Apple iPhone 14 Pro 512GB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
       "price": 1799,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#00000",
+      "modification": "512GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 19,
       "name": "Apple iPhone 14 Pro 1TB Space Black (MQ0T3)",
       "imageUrl": "https://i.ibb.co/bLX3xqJ/Iphone14-Pro-Black.png",
-      "price": 1999
+      "price": 1999,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#00000",
+      "modification": "1TB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 20,
@@ -360,117 +669,595 @@
       "imageUrl": "https://i.ibb.co/LxpzXdk/Iphone14-Pro-Gold.png",
       "price": 1549,
       "sale": 15,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E1B000",
+      "modification": "256GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 21,
       "name": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
       "imageUrl": "https://i.ibb.co/LxpzXdk/Iphone14-Pro-Gold.png",
       "price": 1859,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E1B000",
+      "modification": "512GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 22,
       "name": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       "imageUrl": "https://i.ibb.co/LxpzXdk/Iphone14-Pro-Gold.png",
-      "price": 2249
+      "price": 2249,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E1B000",
+      "modification": "1TB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 23,
       "name": "Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)",
       "imageUrl": "https://i.ibb.co/rHjCFFN/Iphone14-Pro-Purple.png",
       "price": 1449,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#781DBC",
+      "modification": "128GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "https://i.ibb.co/F613kSL/iphone14pro1.png",
+        "https://i.ibb.co/9960fqS/iphone14pro2.png",
+        "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
+        "https://i.ibb.co/3Nt780d/iphone14pro4.png"
+      ]
     },
     {
       "id": 24,
       "name": "Apple iPhone 14 Pro 256GB Deep Purple (MQ0G3)",
       "imageUrl": "https://i.ibb.co/rHjCFFN/Iphone14-Pro-Purple.png",
       "price": 1849,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#781DBC",
+      "modification": "256GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "https://i.ibb.co/F613kSL/iphone14pro1.png",
+        "https://i.ibb.co/9960fqS/iphone14pro2.png",
+        "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
+        "https://i.ibb.co/3Nt780d/iphone14pro4.png"
+      ]
     },
     {
       "id": 25,
       "name": "Apple iPhone 14 Pro 512GB Deep Purple (MQ0G3)",
       "imageUrl": "https://i.ibb.co/rHjCFFN/Iphone14-Pro-Purple.png",
-      "price": 1999
+      "price": 1999,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#781DBC",
+      "modification": "512GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "https://i.ibb.co/F613kSL/iphone14pro1.png",
+        "https://i.ibb.co/9960fqS/iphone14pro2.png",
+        "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
+        "https://i.ibb.co/3Nt780d/iphone14pro4.png"
+      ]
     },
     {
       "id": 26,
       "name": "Apple iPhone 14 Pro 1TB Deep Purple (MQ0G3)",
       "imageUrl": "https://i.ibb.co/rHjCFFN/Iphone14-Pro-Purple.png",
       "price": 2199,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#781DBC",
+      "modification": "1TB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "https://i.ibb.co/F613kSL/iphone14pro1.png",
+        "https://i.ibb.co/9960fqS/iphone14pro2.png",
+        "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
+        "https://i.ibb.co/3Nt780d/iphone14pro4.png"
+      ]
     },
     {
       "id": 27,
       "name": "Apple iPhone 14 Pro 128GB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
       "price": 1399,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E8E8E8",
+      "modification": "128GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 28,
       "name": "Apple iPhone 14 Pro 256GB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
-      "price": 1499
+      "price": 1499,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E8E8E8",
+      "modification": "256GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 29,
       "name": "Apple iPhone 14 Pro 512GB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
-      "price": 1799
+      "price": 1799,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E8E8E8",
+      "modification": "512GB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 30,
       "name": "Apple iPhone 14 Pro 1TB White (MQ2V3)",
       "imageUrl": "https://i.ibb.co/ZYdM5Kp/Iphone14-Pro-White.png",
       "price": 1999,
-      "sale": 50
+      "sale": 50,
+      "deviceFamily": "Apple iPhone 14 Pro",
+      "color": "#E8E8E8",
+      "modification": "1TB",
+      "shortProperties": [
+        {
+          "name": "Screen size",
+          "value": "6.7",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A16 Bionic",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Number of Cores",
+          "value": "6",
+          "iconUrl": "https://i.ibb.co/WVQDGtB/3.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "48-12 -12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "4323 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 31,
       "name": "Samsung Galaxy Watch6 Classic 47mm Black",
       "imageUrl": "https://i.ibb.co/gZBGn5z/Samsung-Watch.png",
       "price": 369,
-      "state": "New Arrival"
+      "state": "New Arrival",
+      "deviceFamily": "Samsung Galaxy Watch6 Classic 47mm",
+      "color": "#00000",
+      "modification": "47mm",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 32,
       "name": "Playstation 5",
       "imageUrl": "https://i.ibb.co/JRCf7gv/Play-Station.png",
       "price": 999,
-      "state": "Featured Products"
+      "state": "Featured Products",
+      "deviceFamily": "Playstation 5",
+      "color": "#00000",
+      "modification": null,
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 33,
       "name": "Apple Vision Pro",
       "imageUrl": "https://i.ibb.co/gwLjN3y/Apple-Vision.png",
       "price": 3549,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "Apple Vision Pro",
+      "color": "#00000",
+      "modification": null,
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 34,
       "name": "MacBook Pro",
       "imageUrl": "https://i.ibb.co/88PPrn5/MacBook.png",
       "price": 2549,
-      "state": "Bestseller"
+      "state": "Bestseller",
+      "deviceFamily": "MacBook Pro",
+      "color": "#E8E8E8",
+      "modification": "M1",
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     },
     {
       "id": 35,
       "name": "Samsung Galaxy 21S Ultra",
       "imageUrl": "https://i.ibb.co/gP8QKpW/image-41.png",
       "price": 1699,
-      "state": "Featured Products"
-    },
-    {
-      "id": 36
-    },
-    {
-      "id": 37
-    },
-    {
-      "id": 38
+      "state": "Featured Products",
+      "deviceFamily": "Samsung Galaxy 21S Ultra",
+      "color": "#00000",
+      "modification": null,
+      "shortProperties": [
+        {}
+      ],
+      "imagesGallery": [
+        "",
+        ""
+      ]
     }
   ],
   "about": [

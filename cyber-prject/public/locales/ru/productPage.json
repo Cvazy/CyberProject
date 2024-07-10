@@ -1,3 +1,13 @@
 {
-  "An unknown error occurred while uploading product data": "Произошла неизвестная ошибка при загрузке данных товара"
+  "Add to cart": "В корзину",
+  "Add to Wishlist": "В избранное",
+  "Select color": "Выберите цвет",
+  "An unknown error occurred while uploading product data": "Произошла неизвестная ошибка при загрузке данных товара",
+  "Free Delivery": "Бесплатная доставка",
+  "1-2 day": "1-2 дня",
+  "In Stock": "В наличии",
+  "Today": "Сегодня",
+  "Guaranteed": "Гарантия",
+  "1 year": "1 год",
+  "Already in Wishlist": "Уже в избранном"
 }

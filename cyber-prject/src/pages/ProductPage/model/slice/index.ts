@@ -1,5 +1,5 @@
 import { ProductType } from "../types";
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { FetchProductData } from "../services";
 
 const initialProductState: ProductType = {
@@ -14,6 +14,26 @@ export const ProductSlice = createSlice({
   reducers: {
     setProductData: (state, action) => {
       state.productData = action.payload;
+    },
+
+    addProductInWishlist(state, action: PayloadAction<{ userId: number }>) {
+      const { userId } = action.payload;
+
+      if (state.productData) {
+        state.productData.favorite = true;
+
+        let favoriteProducts =
+          JSON.parse(
+            localStorage.getItem(`favoriteProducts-${userId}`) || "[]",
+          ) || [];
+
+        favoriteProducts.push(state.productData);
+
+        localStorage.setItem(
+          `favoriteProducts-${userId}`,
+          JSON.stringify(favoriteProducts),
+        );
+      }
     },
   },
   extraReducers: (builder) => {

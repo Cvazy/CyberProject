@@ -2,6 +2,7 @@ module.exports = [
   "bg-[#fff]",
   "bg-[#353535]",
   "bg-[#EDEDED]",
+  "bg-[#781DBC]",
   "lg:font-medium",
   "lg:text-xl",
   "lg:text-4xl",

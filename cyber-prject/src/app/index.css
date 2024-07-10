@@ -91,3 +91,15 @@ input {
 .swiper-button-prev {
   @apply !right-[48px] !left-[unset]
 }
+
+.product_slider .swiper-slide {
+  opacity: 0.4;
+}
+
+.product_slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.product_slider .swiper-wrapper {
+  @apply !flex items-center justify-between sm:justify-center gap-4 md:gap-5 lg:flex-col xl:gap-6
+}
