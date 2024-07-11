@@ -101,5 +101,5 @@ input {
 }
 
 .product_slider .swiper-wrapper {
-  @apply !flex items-center justify-between sm:justify-center gap-4 md:gap-5 lg:flex-col xl:gap-6
+  @apply !flex items-center justify-between sm:justify-center gap-4 md:gap-5 lg:flex-col xl:gap-6 lg:justify-start
 }

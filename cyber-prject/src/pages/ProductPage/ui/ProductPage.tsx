@@ -7,6 +7,7 @@ import { FetchProductData } from "../model";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FetchErrorWrap } from "shared/FetchErrorWrap";
 import { MainProductInfo } from "../../../widgets";
+import { FetchModificationProducts } from "../model/services/FetchModificationProducts";
 
 const ProductPage = () => {
   const navigate = useNavigate();
@@ -16,7 +17,9 @@ const ProductPage = () => {
   const searchParams = new URLSearchParams(location.search);
   const productId = searchParams.get("id");
 
-  const { isLoading, error } = useAppSelector((state) => state.productReducer);
+  const { productData, isLoading, error } = useAppSelector(
+    (state) => state.productReducer,
+  );
 
   useEffect(() => {
     if (productId) {
@@ -25,6 +28,14 @@ const ProductPage = () => {
       navigate("/");
     }
   }, [dispatch, productId, navigate]);
+
+  useEffect(() => {
+    dispatch(
+      FetchModificationProducts({
+        deviceFamily: productData?.deviceFamily || "",
+      }),
+    );
+  }, [dispatch, productData?.deviceFamily]);
 
   return (
     <div className={"w-full h-auto"}>

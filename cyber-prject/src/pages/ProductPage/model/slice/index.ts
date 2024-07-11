@@ -1,11 +1,13 @@
 import { ProductType } from "../types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { FetchProductData } from "../services";
+import { FetchModificationProducts } from "../services/FetchModificationProducts";
 
 const initialProductState: ProductType = {
   productData: undefined,
   isLoading: false,
   error: "",
+  modifications: undefined,
 };
 
 export const ProductSlice = createSlice({
@@ -47,6 +49,19 @@ export const ProductSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(FetchProductData.rejected, (state) => {
+        state.isLoading = false;
+        state.error = "An unknown error occurred while uploading product data";
+      })
+
+      .addCase(FetchModificationProducts.pending, (state) => {
+        state.isLoading = true;
+        state.error = undefined;
+      })
+      .addCase(FetchModificationProducts.fulfilled, (state, action) => {
+        state.modifications = action.payload;
+        state.isLoading = false;
+      })
+      .addCase(FetchModificationProducts.rejected, (state) => {
         state.isLoading = false;
         state.error = "An unknown error occurred while uploading product data";
       });

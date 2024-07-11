@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 //@ts-ignore
-import { FreeMode, Thumbs } from "swiper/modules";
+import { FreeMode, Autoplay, Thumbs } from "swiper/modules";
 import { useState } from "react";
 import { useAppSelector } from "../../../../app/providers/StoreProvider/hooks";
 
@@ -25,8 +25,12 @@ export const ProductSlider = () => {
       <Swiper
         //@ts-ignore
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Thumbs]}
         rewind={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, FreeMode, Thumbs]}
         className={"max-h-[516px] w-full max-w-[413px] sm:max-w-full"}
       >
         {imagesGallery?.map((el) => (
@@ -50,27 +54,35 @@ export const ProductSlider = () => {
       <Swiper
         onSwiper={setThumbsSwiper}
         //@ts-ignore
-        slidesPerView={4}
         rewind={true}
-        freeMode={true}
+        loop={true}
+        slidesPerView={4}
         watchSlidesProgress={true}
         modules={[FreeMode, Thumbs]}
+        breakpoints={{
+          0: {
+            direction: "horizontal",
+          },
+          1280: {
+            direction: "vertical",
+          },
+        }}
         className={
-          "product_slider max-h-[66px] !w-full sm:max-h-[76px] md:max-h-[86px] lg:!max-w-[76px] lg:max-h-full"
+          "product_slider max-h-[66px] min-h-[66px] !w-full sm:max-h-[76px] sm:min-h-[76px] md:max-h-[86px] md:min-h-[86px] lg:!max-w-[76px] lg:max-h-[456px]"
         }
       >
         {imagesGallery?.map((el) => (
           <SwiperSlide
             key={el}
             className={
-              "!flex justify-center !w-fit max-w-[75px] max-h-[66px] cursor-pointer sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
+              "!flex justify-center !w-fit max-w-[75px] max-h-[66px] min-h-[66px] cursor-pointer sm:max-h-[76px] sm:min-h-[76px] md:max-h-[86px] md:min-h-[86px] lg:max-h-[96px] lg:min-h-[96px]"
             }
           >
             <img
               src={el}
               alt={name}
               className={
-                "max-w-[75px] max-h-[66px] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
+                "max-w-[75px] max-h-[66px] min-h-[auto] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
               }
               loading={"lazy"}
               draggable={false}

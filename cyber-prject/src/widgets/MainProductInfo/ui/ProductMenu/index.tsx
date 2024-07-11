@@ -6,6 +6,8 @@ import ShopIcon from "shared/assets/images/Icon/shop.svg";
 import VerifyIcon from "shared/assets/images/Icon/verify.svg";
 import DeliveryIcon from "shared/assets/images/Icon/delivery-truck.svg";
 import { ProductActionsBlock } from "./ProductActionsBlock";
+import { Link } from "react-router-dom";
+import { MemoryModificationBlock } from "./MemoryModificationBlock";
 
 export const ProductMenu = () => {
   const { t } = useTranslation("productPage");
@@ -17,7 +19,24 @@ export const ProductMenu = () => {
     price = 0,
     sale = undefined,
     shortProperties = [],
+    modification = "",
   } = useAppSelector((state) => state.productReducer?.productData) ?? {};
+
+  const { modifications } = useAppSelector((state) => state.productReducer);
+
+  let colorMap = new Map();
+
+  modifications?.forEach((product) => {
+    if (!colorMap.has(product.color)) {
+      colorMap.set(product.color, { id: product.id, color: product.color });
+    }
+  });
+
+  let uniqueColorArray = Array.from(colorMap.values());
+
+  const memoryModification = modifications?.filter(
+    (product) => product.color === color,
+  );
 
   return (
     <div className={"flex flex-col items-start gap-8 w-full"}>
@@ -53,19 +72,41 @@ export const ProductMenu = () => {
             </p>
 
             <div className={"flex items-center gap-2 w-full"}>
-              <div className={`w-8 h-8 rounded-full bg-[${color}]`}></div>
+              {uniqueColorArray?.map((product) => (
+                <Link
+                  key={product.id}
+                  to={`/product?id=${product.id}`}
+                  className={`w-8 h-8 rounded-full bg-[${product.color}] ${product.color === color ? "border-2 border-solid border-[#ff0000]" : ""}`}
+                ></Link>
+              ))}
             </div>
           </div>
 
+          <div className={"grid grid-cols-4 gap-2 w-full sm:gap-4"}>
+            {memoryModification?.map(
+              (product) =>
+                !!product.modification && (
+                  <MemoryModificationBlock
+                    key={product.id}
+                    productId={product.id}
+                    currentModification={modification}
+                    memoryValue={product.modification || ""}
+                  />
+                ),
+            )}
+          </div>
+
           <div className={"grid gap-2 w-full sm:grid-cols-2 xl:grid-cols-3"}>
-            {shortProperties.map(({ name, iconUrl, value }) => (
-              <ShortDescCard
-                key={iconUrl}
-                name={name}
-                value={value}
-                iconUrl={iconUrl}
-              />
-            ))}
+            {shortProperties?.[0] &&
+              Object.keys(shortProperties[0]).length > 0 &&
+              shortProperties.map(({ name, iconUrl, value }) => (
+                <ShortDescCard
+                  key={iconUrl}
+                  name={name}
+                  value={value}
+                  iconUrl={iconUrl}
+                />
+              ))}
           </div>
         </div>
       </div>

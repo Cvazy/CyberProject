@@ -23,4 +23,5 @@ export interface ProductType {
   productData?: IProductData;
   isLoading: boolean;
   error?: string;
+  modifications?: IProductData[];
 }
