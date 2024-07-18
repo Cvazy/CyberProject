@@ -5,16 +5,16 @@ import burgerIcon from "shared/assets/images/Icon/burger.svg";
 import logoutIcon from "shared/assets/images/Icon/logout.svg";
 import profileIcon from "shared/assets/images/Icon/profile.svg";
 import wishlistIcon from "shared/assets/images/Icon/wishlist.svg";
-import { Input } from "../Input";
 import { Link, useNavigate } from "react-router-dom";
 import { NavLinks } from "./components";
 import { ChangeLanguage, Icon } from "../index";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../app/providers/StoreProvider/hooks";
-import { userActions } from "../../../entities/User";
+} from "app/providers/StoreProvider/hooks";
+import { userActions } from "entities/User";
 import { useCallback } from "react";
+import { SearchedProducts } from "features";
 
 type HeaderProps = {
   mobileMenuVisible: boolean;
@@ -62,14 +62,7 @@ export const Header = ({
                     "hidden items-center justify-between gap-9 w-full lg:flex"
                   }
                 >
-                  <div className={"w-full lg:max-w-[372px]"}>
-                    <Input
-                      icon={true}
-                      placeholder={"Search"}
-                      className={"bg-[#F5F5F5] pl-12 pr-3 py-[19px] h-[56px]"}
-                      paddingForIcon={"top-5 left-5"}
-                    />
-                  </div>
+                  <SearchedProducts />
 
                   <NavLinks
                     placeOfUse={"header"}

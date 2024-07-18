@@ -21,7 +21,7 @@
           "31": 1
         },
         {
-          "23": 3
+          "22": 2
         }
       ]
     },
@@ -532,7 +532,135 @@
         "https://i.ibb.co/K29710j/v8nu0daou299k9port8vgjsy0qj3aihl.png",
         "https://i.ibb.co/9ssrrd7/vyzcyy768ibbl0bqpso9eqd70jh73hpv.jpg",
         "https://i.ibb.co/vjpvMYZ/xgjou790p7yqefau83l412dgiohjwp46.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "128GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -581,7 +709,135 @@
         "https://i.ibb.co/K29710j/v8nu0daou299k9port8vgjsy0qj3aihl.png",
         "https://i.ibb.co/9ssrrd7/vyzcyy768ibbl0bqpso9eqd70jh73hpv.jpg",
         "https://i.ibb.co/vjpvMYZ/xgjou790p7yqefau83l412dgiohjwp46.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "256GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 18,
@@ -631,7 +887,135 @@
         "https://i.ibb.co/K29710j/v8nu0daou299k9port8vgjsy0qj3aihl.png",
         "https://i.ibb.co/9ssrrd7/vyzcyy768ibbl0bqpso9eqd70jh73hpv.jpg",
         "https://i.ibb.co/vjpvMYZ/xgjou790p7yqefau83l412dgiohjwp46.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "512GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 19,
@@ -680,7 +1064,135 @@
         "https://i.ibb.co/K29710j/v8nu0daou299k9port8vgjsy0qj3aihl.png",
         "https://i.ibb.co/9ssrrd7/vyzcyy768ibbl0bqpso9eqd70jh73hpv.jpg",
         "https://i.ibb.co/vjpvMYZ/xgjou790p7yqefau83l412dgiohjwp46.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "1TB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 20,
@@ -728,7 +1240,135 @@
         "https://i.ibb.co/TtgyWKt/30064951bb.jpg",
         "https://i.ibb.co/pf0ZWzp/30064951bb1.jpg",
         "https://i.ibb.co/YQCcsY2/30064951bb2.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "256GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 21,
@@ -775,7 +1415,135 @@
         "https://i.ibb.co/TtgyWKt/30064951bb.jpg",
         "https://i.ibb.co/pf0ZWzp/30064951bb1.jpg",
         "https://i.ibb.co/YQCcsY2/30064951bb2.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "512GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 22,
@@ -821,7 +1589,135 @@
         "https://i.ibb.co/TtgyWKt/30064951bb.jpg",
         "https://i.ibb.co/pf0ZWzp/30064951bb1.jpg",
         "https://i.ibb.co/YQCcsY2/30064951bb2.jpg"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "1TB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 23,
@@ -869,7 +1765,135 @@
         "https://i.ibb.co/9960fqS/iphone14pro2.png",
         "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
         "https://i.ibb.co/3Nt780d/iphone14pro4.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "128GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 24,
@@ -917,7 +1941,135 @@
         "https://i.ibb.co/9960fqS/iphone14pro2.png",
         "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
         "https://i.ibb.co/3Nt780d/iphone14pro4.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "256GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 25,
@@ -964,7 +2116,135 @@
         "https://i.ibb.co/9960fqS/iphone14pro2.png",
         "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
         "https://i.ibb.co/3Nt780d/iphone14pro4.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "512GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 26,
@@ -1012,7 +2292,135 @@
         "https://i.ibb.co/9960fqS/iphone14pro2.png",
         "https://i.ibb.co/nBvBKSf/iphone14pro3.png",
         "https://i.ibb.co/3Nt780d/iphone14pro4.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "1TB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 27,
@@ -1061,7 +2469,135 @@
         "https://i.ibb.co/zhcSVjH/hbnqnya3ao1ci64yjvc7pxlmkj53btut.jpg",
         "https://i.ibb.co/d4jPN2L/mwrd2b2esekfxxies8dpffm7x31l8odp.png",
         "https://i.ibb.co/VYXsrG0/uy6kxzw626w6fib78kv1q8cz2rdtxdw7.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "128GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 28,
@@ -1109,7 +2645,135 @@
         "https://i.ibb.co/zhcSVjH/hbnqnya3ao1ci64yjvc7pxlmkj53btut.jpg",
         "https://i.ibb.co/d4jPN2L/mwrd2b2esekfxxies8dpffm7x31l8odp.png",
         "https://i.ibb.co/VYXsrG0/uy6kxzw626w6fib78kv1q8cz2rdtxdw7.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "256GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 29,
@@ -1157,7 +2821,135 @@
         "https://i.ibb.co/zhcSVjH/hbnqnya3ao1ci64yjvc7pxlmkj53btut.jpg",
         "https://i.ibb.co/d4jPN2L/mwrd2b2esekfxxies8dpffm7x31l8odp.png",
         "https://i.ibb.co/VYXsrG0/uy6kxzw626w6fib78kv1q8cz2rdtxdw7.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "512GB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 30,
@@ -1206,7 +2998,135 @@
         "https://i.ibb.co/zhcSVjH/hbnqnya3ao1ci64yjvc7pxlmkj53btut.jpg",
         "https://i.ibb.co/d4jPN2L/mwrd2b2esekfxxies8dpffm7x31l8odp.png",
         "https://i.ibb.co/VYXsrG0/uy6kxzw626w6fib78kv1q8cz2rdtxdw7.png"
-      ]
+      ],
+      "details": {
+        "text": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.",
+        "detailsArray": [
+          {
+            "title": "Screen",
+            "detailsArray": [
+              {
+                "name": "Screen diagonal",
+                "values": [
+                  "6.7"
+                ]
+              },
+              {
+                "name": "The screen resolution",
+                "values": [
+                  "2796x1290"
+                ]
+              },
+              {
+                "name": "The screen refresh rate",
+                "values": [
+                  "120 Hz"
+                ]
+              },
+              {
+                "name": "The pixel density",
+                "values": [
+                  "460 ppi"
+                ]
+              },
+              {
+                "name": "Screen type",
+                "values": [
+                  "OLED"
+                ]
+              },
+              {
+                "name": "Additionally",
+                "values": [
+                  "Dynamic Island",
+                  "Always-On display",
+                  "HDR display",
+                  "True Tone",
+                  "Wide color (P3)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "CPU",
+            "detailsArray": [
+              {
+                "name": "CPU",
+                "values": [
+                  "A16 Bionic"
+                ]
+              },
+              {
+                "name": "Number of cores",
+                "values": [
+                  "6"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Memory",
+            "detailsArray": [
+              {
+                "name": "The amount of internal memory",
+                "values": [
+                  "1TB"
+                ]
+              },
+              {
+                "name": "Random access memory",
+                "values": [
+                  "12GB"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Connection",
+            "detailsArray": [
+              {
+                "name": "Standard",
+                "values": [
+                  "5G (sub‑6 GHz)",
+                  "Gigabit Class LTE",
+                  "GSM/EDGE",
+                  "UMTS/HSPA+/DC-HSDPA",
+                  "MIMO"
+                ]
+              },
+              {
+                "name": "SIM card",
+                "values": [
+                  "Nano Sim + eSIM"
+                ]
+              },
+              {
+                "name": "Connector",
+                "values": [
+                  "Lightning"
+                ]
+              },
+              {
+                "name": "Interfaces",
+                "values": [
+                  "Wi‑Fi 6 (802.11ax)",
+                  "Bluetooth 5.3",
+                  "NFC"
+                ]
+              },
+              {
+                "name": "Satellite navigation",
+                "values": [
+                  "GPS",
+                  "Galileo",
+                  "QZSS",
+                  "BeiDou"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": 31,

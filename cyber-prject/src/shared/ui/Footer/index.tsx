@@ -56,7 +56,7 @@ export const Footer = () => {
                   >
                     <p
                       className={
-                        "text-base text-white font-semibold text-nowrap"
+                        "text-base text-white font-semibold text-nowrap whitespace-nowrap"
                       }
                     >
                       {t("Services")}
@@ -84,7 +84,7 @@ export const Footer = () => {
                   >
                     <p
                       className={
-                        "text-base text-white font-semibold text-nowrap"
+                        "text-base text-white font-semibold text-nowrap whitespace-nowrap"
                       }
                     >
                       {t("Assistance to the buyer")}

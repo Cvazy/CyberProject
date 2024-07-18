@@ -1,13 +1,13 @@
 import { ProductType } from "../types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { FetchProductData } from "../services";
-import { FetchModificationProducts } from "../services/FetchModificationProducts";
+import { FetchProductData, FetchModificationProducts } from "../services";
 
 const initialProductState: ProductType = {
   productData: undefined,
   isLoading: false,
   error: "",
   modifications: undefined,
+  randomProducts: [],
 };
 
 export const ProductSlice = createSlice({
@@ -16,6 +16,10 @@ export const ProductSlice = createSlice({
   reducers: {
     setProductData: (state, action) => {
       state.productData = action.payload;
+    },
+
+    setRandomProducts: (state, action) => {
+      state.randomProducts = action.payload;
     },
 
     addProductInWishlist(state, action: PayloadAction<{ userId: number }>) {

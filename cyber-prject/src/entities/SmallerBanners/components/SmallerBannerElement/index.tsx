@@ -33,7 +33,9 @@ export const SmallerBannerElement: FC<Data> = ({ data }) => {
       className={`flex flex-col-reverse items-center w-full h-full gap-6 px-4 py-10 ${hoverEffect ? "lg:flex-row-reverse lg:px-0 lg:py-0" : "lg:py-0 lg:px-0 lg:flex-row"}`}
     >
       <div className={"flex flex-col items-center gap-4 w-full lg:items-start"}>
-        <h2 className={`text-3xl font-extralight lg:text-nowrap ${titleClass}`}>
+        <h2
+          className={`text-3xl font-extralight lg:text-nowrap lg:whitespace-nowrap ${titleClass}`}
+        >
           {smallBanner.title}{" "}
           <span className={subtitleClass}>{smallBanner.subtitle}</span>
         </h2>

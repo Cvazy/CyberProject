@@ -1,5 +1,4 @@
 import { ButtonHTMLAttributes } from "react";
-import { useTranslation } from "react-i18next";
 
 export const Button = ({
   children,
@@ -8,8 +7,6 @@ export const Button = ({
   disabled,
   type,
 }: ButtonHTMLAttributes<any>) => {
-  const { t } = useTranslation();
-
   return (
     <button
       type={type ? type : "button"}
@@ -17,7 +14,7 @@ export const Button = ({
       onClick={onClick}
       disabled={disabled}
     >
-      {t(`${children}`)}
+      {children}
     </button>
   );
 };

@@ -65,7 +65,11 @@ export const MobileMenu = ({
                   <Icon src={wishlistIcon} alt={"Wishlist"} />
                 </div>
 
-                <p className={"text-base text-black text-nowrap"}>
+                <p
+                  className={
+                    "text-base text-black text-nowrap whitespace-nowrap"
+                  }
+                >
                   {t("Your Wishlist")}
                 </p>
               </Link>
@@ -79,7 +83,11 @@ export const MobileMenu = ({
                   <Icon src={cartIcon} alt={"Cart"} />
                 </div>
 
-                <p className={"text-base text-black text-nowrap"}>
+                <p
+                  className={
+                    "text-base text-black text-nowrap whitespace-nowrap"
+                  }
+                >
                   {t("Your Cart")}
                 </p>
               </Link>
@@ -93,7 +101,11 @@ export const MobileMenu = ({
                   <Icon src={profileIcon} alt={"Profile"} />
                 </div>
 
-                <p className={"text-base text-black text-nowrap"}>
+                <p
+                  className={
+                    "text-base text-black text-nowrap whitespace-nowrap"
+                  }
+                >
                   {t("Your Profile")}
                 </p>
               </Link>
@@ -107,7 +119,11 @@ export const MobileMenu = ({
                   <Icon src={logoutIcon} alt={"Logout"} />
                 </div>
 
-                <p className={"text-base text-black text-nowrap"}>
+                <p
+                  className={
+                    "text-base text-black text-nowrap whitespace-nowrap"
+                  }
+                >
                   {t("Logout")}
                 </p>
               </div>
@@ -124,7 +140,9 @@ export const MobileMenu = ({
                 <Icon src={profileIcon} alt={"Profile"} />
               </div>
 
-              <p className={"text-base text-black text-nowrap"}>
+              <p
+                className={"text-base text-black text-nowrap whitespace-nowrap"}
+              >
                 {t("Authorization")}
               </p>
             </Link>

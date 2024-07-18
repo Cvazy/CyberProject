@@ -19,6 +19,9 @@ module.exports = {
         "desktop-footer-banner":
           "url('../shared/assets/images/FooterBanners/Banner.jpg')",
       },
+      transitionProperty: {
+        "max-height": "max-height",
+      },
     },
   },
   plugins: [],

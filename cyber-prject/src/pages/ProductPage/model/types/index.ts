@@ -1,7 +1,14 @@
+import { IProductDetailsBlock } from "entities/ProductDetailsBlock";
+
 export interface ShortPropertiesProps {
   name: string;
   value: string;
   iconUrl: string;
+}
+
+export interface ProductDescriptionTypes {
+  text: string;
+  detailsArray: IProductDetailsBlock[];
 }
 
 export interface IProductData {
@@ -17,6 +24,7 @@ export interface IProductData {
   modification?: string;
   shortProperties?: ShortPropertiesProps[];
   imagesGallery?: string[];
+  details: ProductDescriptionTypes;
 }
 
 export interface ProductType {
@@ -24,4 +32,5 @@ export interface ProductType {
   isLoading: boolean;
   error?: string;
   modifications?: IProductData[];
+  randomProducts: IProductData[];
 }

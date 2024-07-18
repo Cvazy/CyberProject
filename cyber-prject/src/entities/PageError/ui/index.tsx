@@ -50,7 +50,7 @@ export const PageError = () => {
 
             <Button
               className={
-                "h-[46px] bg-black text-white text-nowrap border-black px-8 hover:bg-white hover:text-[#211C24] md:h-56 md:px-56"
+                "h-[46px] bg-black text-white text-nowrap whitespace-nowrap border-black px-8 hover:bg-white hover:text-[#211C24] md:h-56 md:px-56"
               }
               onClick={onReloadPage}
             >

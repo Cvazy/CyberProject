@@ -49,7 +49,7 @@ export const CategoryElement: FC<ICategoryElementProps> = ({
 
           <p
             className={
-              "text-center text-nowrap text-black font-medium text-base leading-6"
+              "text-center text-nowrap whitespace-nowrap text-black font-medium text-base leading-6"
             }
           >
             {t(name)}

@@ -8,15 +8,21 @@ import { useEffect, useRef, useState } from "react";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../app/providers/StoreProvider/hooks";
-import { LoaderTwister } from "../../../shared/ui/Loader/LoaderTwister";
+} from "app/providers/StoreProvider/hooks";
+import { LoaderTwister } from "shared/ui/Loader/LoaderTwister";
+import { IProductData } from "../../../pages/ProductPage/model";
 
 interface ProductCardType {
-  product: ProductSchema;
+  product: ProductSchema | IProductData;
   onRemove?: (id: number) => void;
+  favoriteIcon?: boolean;
 }
 
-export const ProductCard = ({ product, onRemove }: ProductCardType) => {
+export const ProductCard = ({
+  product,
+  onRemove,
+  favoriteIcon,
+}: ProductCardType) => {
   const { id, name, price, sale, imageUrl, favorite } = product;
 
   const dispatch = useAppDispatch();
@@ -78,16 +84,18 @@ export const ProductCard = ({ product, onRemove }: ProductCardType) => {
       <div className={"py-6 px-3 w-full h-full md:px-4"}>
         <div className={"flex flex-col items-center gap-4 w-full h-full"}>
           <div className={"flex justify-end w-full"}>
-            <button
-              type={"button"}
-              className={"hover:scale-110"}
-              onClick={() => onFavoriteClick(id)}
-            >
-              <Icon
-                src={favorite ? FavoriteIcon : ProductWishlistIcon}
-                alt={"Wishlist"}
-              />
-            </button>
+            {favoriteIcon !== false && (
+              <button
+                type={"button"}
+                className={"hover:scale-110"}
+                onClick={() => onFavoriteClick(id)}
+              >
+                <Icon
+                  src={favorite ? FavoriteIcon : ProductWishlistIcon}
+                  alt={"Wishlist"}
+                />
+              </button>
+            )}
           </div>
 
           <div

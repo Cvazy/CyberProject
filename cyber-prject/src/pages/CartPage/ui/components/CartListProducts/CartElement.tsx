@@ -66,7 +66,7 @@ export const CartElement = ({ product }: CartElementProps) => {
 
               <p
                 className={
-                  "text-black font-normal text-sm !leading-6 w-full overflow-hidden text-ellipsis text-nowrap"
+                  "text-black font-normal text-sm !leading-6 w-full overflow-hidden text-ellipsis text-nowrap whitespace-nowrap"
                 }
               >
                 #{id}

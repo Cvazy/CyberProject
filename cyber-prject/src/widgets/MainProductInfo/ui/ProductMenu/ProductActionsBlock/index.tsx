@@ -4,7 +4,7 @@ import PlusIcon from "shared/assets/images/Icon/plus.svg";
 import { IProductData, productActions } from "pages/ProductPage/model";
 import { useEffect } from "react";
 import { ChangeProductQnt, FetchUserCart } from "pages/CartPage/model";
-import { AddToCart } from "pages/ProductPage/model/services/AddToCart";
+import { AddToCart } from "pages/ProductPage/model/services";
 import {
   useAppDispatch,
   useAppSelector,

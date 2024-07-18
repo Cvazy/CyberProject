@@ -9,6 +9,7 @@ import { AboutDataSliceReducer } from "pages/AboutPage";
 import { ContactDataSliceReducer } from "pages/ContactPage/model";
 import { productReducer } from "pages/ProductPage/model";
 import { cartReducer } from "pages/CartPage/model";
+import SearchedProductsReducer from "features/SearchedProducts/model/slice";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -23,4 +24,5 @@ export const rootReducer = combineReducers({
   ContactDataSliceReducer,
   productReducer,
   cartReducer,
+  SearchedProductsReducer,
 });
