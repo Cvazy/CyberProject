@@ -64,5 +64,6 @@
   "The password was filled in incorrectly. The minimum password length is 6 characters": "The password was filled in incorrectly. The minimum password length is 6 characters",
   "The password was filled in incorrectly. The maximum password length is 30 characters": "The password was filled in incorrectly. The maximum password length is 30 characters",
   "Please repeat the password": "Please repeat the password",
-  "Passwords don't match": "Passwords don't match"
+  "Passwords don't match": "Passwords don't match",
+  "Nothing was found": "Nothing was found"
 }

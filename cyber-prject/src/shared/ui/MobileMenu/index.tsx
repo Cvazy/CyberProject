@@ -1,4 +1,3 @@
-import { Input } from "../Input";
 import { Link, useNavigate } from "react-router-dom";
 import wishlistIcon from "shared/assets/images/Icon/wishlist.svg";
 import cartIcon from "shared/assets/images/Icon/cart.svg";
@@ -13,10 +12,11 @@ import {
 import { useCallback } from "react";
 import { userActions } from "../../../entities/User";
 import logoutIcon from "../../assets/images/Icon/logout.svg";
+import { SearchedProducts } from "../../../features";
 
 type MobileMenuProps = {
   mobileMenuVisible: boolean;
-  setMobileMenuVisible: any;
+  setMobileMenuVisible: (value: boolean) => void;
 };
 
 export const MobileMenu = ({
@@ -40,14 +40,7 @@ export const MobileMenu = ({
     >
       <div className={"pt-[104px] pb-6 px-4 w-full"}>
         <div className={"flex flex-col items-start gap-6 w-full"}>
-          <div className={"w-full lg:max-w-[372px]"}>
-            <Input
-              icon={true}
-              placeholder={"Search"}
-              className={"bg-[#F5F5F5] pl-12 pr-3 py-[19px] h-[56px]"}
-              paddingForIcon={"top-5 left-5"}
-            />
-          </div>
+          <SearchedProducts setMobileMenuVisible={setMobileMenuVisible} />
 
           <NavLinks
             placeOfUse={"menu"}

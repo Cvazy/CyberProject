@@ -14,7 +14,7 @@ export const SearchedElement = ({
           <img
             src={imageUrl}
             alt={name}
-            className={"block w-10 h-10"}
+            className={"block w-10"}
             loading={"lazy"}
             draggable={"false"}
           />

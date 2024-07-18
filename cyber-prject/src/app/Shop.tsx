@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, /*useEffect,*/ useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Header, MobileMenu, Footer, Loader } from "shared/ui";
 import AppRouter from "./providers/Routers/ui/AppRouter";
 import { useAppDispatch } from "./providers/StoreProvider/hooks";

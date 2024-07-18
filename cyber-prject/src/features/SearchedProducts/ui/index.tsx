@@ -7,10 +7,20 @@ import {
   useAppSelector,
 } from "app/providers/StoreProvider/hooks";
 import { FetchSearchedProducts } from "../model/services";
+import { useTranslation } from "react-i18next";
 
-export const SearchedProducts = () => {
+interface SearchedProductsProps {
+  setMobileMenuVisible?: (value: boolean) => void;
+}
+
+export const SearchedProducts = ({
+  setMobileMenuVisible,
+}: SearchedProductsProps) => {
+  const { t } = useTranslation();
+
   const [searchedValue, setSearchedValue] = useState("");
   const [searchedFlag, setSearchedFlag] = useState(false);
+  const [visibleSearchedList, setVisibleSearchedList] = useState(false);
 
   const dispatch = useAppDispatch();
   const { searchedProducts } = useAppSelector(
@@ -33,7 +43,10 @@ export const SearchedProducts = () => {
   };
 
   return (
-    <div className={"w-full relative lg:max-w-[372px]"}>
+    <div
+      className={"w-full relative lg:max-w-[372px]"}
+      onFocus={() => setVisibleSearchedList(true)}
+    >
       <Input
         icon={true}
         placeholder={"Search"}
@@ -43,8 +56,33 @@ export const SearchedProducts = () => {
         value={searchedValue}
       />
 
-      {!!searchedProducts?.length && !!searchedValue && (
-        <SearchedProductsList searchedProducts={searchedProducts} />
+      {visibleSearchedList && (
+        <div
+          className={"z-10 absolute w-full top-[50px]"}
+          onClick={() => {
+            setVisibleSearchedList(false);
+
+            if (setMobileMenuVisible) {
+              setMobileMenuVisible(false);
+            }
+          }}
+        >
+          <div
+            className={
+              "w-full bg-[#F5F5F5] border border-t-0 border-solid border-[#B5B5B5] rounded-b-lg max-h-72 overflow-y-scroll"
+            }
+          >
+            {searchedProducts?.length ? (
+              <SearchedProductsList searchedProducts={searchedProducts} />
+            ) : (
+              <div className={"flex justify-center items-center p-3 w-full"}>
+                <p className={"text-sm text-black text-center font-medium"}>
+                  {t("Nothing was found")}
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
       )}
     </div>
   );

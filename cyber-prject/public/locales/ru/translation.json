@@ -64,5 +64,6 @@
   "The password was filled in incorrectly. The minimum password length is 6 characters": "Неверно заполнен пароль. Минимальная длина пароля 6 символов",
   "The password was filled in incorrectly. The maximum password length is 30 characters": "Неверно заполнен пароль. Максимальная длина пароля 30 символов",
   "Please repeat the password": "Пожалуйста, повторите пароль",
-  "Passwords don't match": "Пароли не совпадают"
+  "Passwords don't match": "Пароли не совпадают",
+  "Nothing was found": "Ничего не найдено"
 }
