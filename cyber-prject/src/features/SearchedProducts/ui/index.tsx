@@ -46,6 +46,11 @@ export const SearchedProducts = ({
     <div
       className={"w-full relative lg:max-w-[372px]"}
       onFocus={() => setVisibleSearchedList(true)}
+      onBlur={() => {
+        setTimeout(() => {
+          setVisibleSearchedList(false);
+        }, 150);
+      }}
     >
       <Input
         icon={true}
