@@ -18,7 +18,7 @@ export const RelatedProducts = () => {
 
   return (
     <div className={"flex justify-center w-full px-4"}>
-      <div className={"max-w-[1120px]"}>
+      <div className={"max-w-[1120px] w-full"}>
         <div className={"w-full py-10 md:py-14 lg:py-16 xl:py-20"}>
           <div className={"flex flex-col items-start gap-8 w-full"}>
             <p

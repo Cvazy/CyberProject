@@ -3306,5 +3306,40 @@
       "id": "SUPER",
       "sale": 10
     }
+  ],
+  "reviews": [
+    {
+      "id": 19,
+      "reviewsList": [
+        {
+          "id": 1,
+          "userId": 1,
+          "mark": 5,
+          "date": "20 July,2024",
+          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 1"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "mark": 4,
+          "date": "18 July,2024",
+          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 2"
+        },
+        {
+          "id": 3,
+          "userId": 3,
+          "mark": 5,
+          "date": "12 July,2024",
+          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 3"
+        },
+        {
+          "id": 4,
+          "userId": 4,
+          "mark": 2,
+          "date": "19 July,2024",
+          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 4"
+        }
+      ]
+    }
   ]
 }

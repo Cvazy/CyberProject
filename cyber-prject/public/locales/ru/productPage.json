@@ -32,5 +32,14 @@
   "SIM card": "SIM-карта",
   "Connector": "Разъём",
   "Interfaces": "Интерфейсы",
-  "Satellite navigation": "Спутниковая навигация"
+  "Satellite navigation": "Спутниковая навигация",
+  "Reviews": "Отзывы",
+  "An error occurred while uploading reviews": "Произошла ошибка при загрузке отзывов",
+  "of": "из",
+  "reviews": "отзывов",
+  "Excellent": "Отлично",
+  "Good": "Хорошо",
+  "Average": "Средне",
+  "Below Average": "Ниже среднего",
+  "Poor": "Плохо"
 }

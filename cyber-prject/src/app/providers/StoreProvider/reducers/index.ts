@@ -4,12 +4,12 @@ import SmallBannerReducer from "entities/SmallerBanners/model/slice";
 import CategoriesReducer from "entities/ShopCategories/model/slice";
 import { loginReducer, updateUserDataReducer, registerReducer } from "features";
 import { userReducer } from "entities/User";
-import { ProductListReducer } from "widgets/ProductList/model";
 import { AboutDataSliceReducer } from "pages/AboutPage";
 import { ContactDataSliceReducer } from "pages/ContactPage/model";
 import { productReducer } from "pages/ProductPage/model";
 import { cartReducer } from "pages/CartPage/model";
 import SearchedProductsReducer from "features/SearchedProducts/model/slice";
+import { reviewsReducer, ProductListReducer } from "widgets";
 
 export const rootReducer = combineReducers({
   MainBannerReducer,
@@ -25,4 +25,5 @@ export const rootReducer = combineReducers({
   productReducer,
   cartReducer,
   SearchedProductsReducer,
+  reviewsReducer,
 });

@@ -10,7 +10,8 @@ import {
   MainProductInfo,
   RelatedProducts,
   ProductDescription,
-} from "../../../widgets";
+  ReviewsBlock,
+} from "widgets";
 
 const ProductPage = () => {
   const navigate = useNavigate();
@@ -48,7 +49,9 @@ const ProductPage = () => {
             <FetchErrorWrap isLoading={isLoading} error={error}>
               <MainProductInfo />
 
-              <ProductDescription />
+              {productData?.details && <ProductDescription />}
+
+              <ReviewsBlock productId={productData?.id} />
 
               <RelatedProducts />
             </FetchErrorWrap>

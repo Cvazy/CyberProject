@@ -32,5 +32,14 @@
   "SIM card" : "SIM card",
   "Connector": "Connector",
   "Interfaces": "Interfaces",
-  "Satellite navigation": "Satellite navigation"
+  "Satellite navigation": "Satellite navigation",
+  "Reviews": "Reviews",
+  "An error occurred while uploading reviews": "An error occurred while uploading reviews",
+  "of": "of",
+  "reviews": "reviews",
+  "Excellent": "Excellent",
+  "Good": "Good",
+  "Average": "Average",
+  "Below Average": "Below Average",
+  "Poor": "Poor"
 }
