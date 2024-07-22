@@ -1,8 +1,11 @@
 import { MarkLine } from "./MarkLine";
-import { useAppSelector } from "../../../../../app/providers/StoreProvider/hooks";
+import { ReviewBlockTypes } from "../../../model";
 
-export const MarksSchedule = () => {
-  const { reviewsData } = useAppSelector((state) => state.reviewsReducer);
+interface MarksScheduleProps {
+  allReviewsData?: ReviewBlockTypes[];
+}
+
+export const MarksSchedule = ({ allReviewsData }: MarksScheduleProps) => {
   const markSchedule = [
     { mark: "Excellent", percent: 0, quantity: 0 },
     { mark: "Good", percent: 0, quantity: 0 },
@@ -11,10 +14,10 @@ export const MarksSchedule = () => {
     { mark: "Poor", percent: 0, quantity: 0 },
   ];
 
-  if (reviewsData) {
+  if (allReviewsData) {
     let totalMarks = 0;
 
-    reviewsData.forEach(({ mark }) => {
+    allReviewsData.forEach(({ mark }) => {
       totalMarks += 1;
 
       switch (mark) {

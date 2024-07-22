@@ -53,7 +53,7 @@ export const ReviewsBlock = ({ productId }: ReviewsProps) => {
               </p>
 
               <FetchErrorWrap isLoading={isLoading}>
-                <ReviewStatistic />
+                <ReviewStatistic productId={productId} />
 
                 <AddReviewOnProduct productId={productId} />
 

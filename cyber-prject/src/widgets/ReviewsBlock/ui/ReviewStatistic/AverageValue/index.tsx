@@ -1,21 +1,24 @@
 import { useTranslation } from "react-i18next";
-import { useAppSelector } from "app/providers/StoreProvider/hooks";
 import { useMemo } from "react";
 import GoldStar from "shared/assets/images/Icon/gold_star.svg";
+import { ReviewBlockTypes } from "../../../model";
 
-export const AverageValue = () => {
+interface AverageValueProps {
+  allReviewsData?: ReviewBlockTypes[];
+}
+
+export const AverageValue = ({ allReviewsData }: AverageValueProps) => {
   const { t } = useTranslation("productPage");
-  const { reviewsData } = useAppSelector((state) => state.reviewsReducer);
 
   const averageValue = useMemo(() => {
     let value = 0;
 
-    reviewsData?.forEach((review) => {
+    allReviewsData?.forEach((review) => {
       value += review.mark;
     });
 
-    return reviewsData ? (value / reviewsData?.length).toFixed(1) : 0;
-  }, [reviewsData]);
+    return allReviewsData ? (value / allReviewsData?.length).toFixed(1) : 0;
+  }, [allReviewsData]);
 
   return (
     <div
@@ -47,7 +50,7 @@ export const AverageValue = () => {
             }
           >
             <span>{t("of")}</span>{" "}
-            {reviewsData?.length ? reviewsData?.length : 0}{" "}
+            {allReviewsData?.length ? allReviewsData?.length : 0}{" "}
             <span>{t("reviews")}</span>
           </p>
         </div>
