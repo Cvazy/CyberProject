@@ -4,15 +4,19 @@ import { serverUrl } from "app/constants";
 
 interface FetchReviewsProps {
   productId: number;
+  limit: number;
 }
 
 export const FetchReviews = createAsyncThunk(
   "Product/FetchReviews",
-  async ({ productId }: FetchReviewsProps, { dispatch, rejectWithValue }) => {
+  async (
+    { productId, limit }: FetchReviewsProps,
+    { dispatch, rejectWithValue },
+  ) => {
     if (productId) {
       try {
         const response = await axios.get(
-          `${serverUrl}/reviews/${productId.toString()}`,
+          `${serverUrl}/reviews?productId=${productId}&_limit=${limit}`,
         );
 
         return response.data;

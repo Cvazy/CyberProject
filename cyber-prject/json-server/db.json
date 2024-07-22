@@ -3309,23 +3309,76 @@
   ],
   "reviews": [
     {
-      "id": 19,
-      "reviewsList": [
-        {
-          "id": 1,
-          "username": "Павел Мурахтанов",
-          "mark": 5,
-          "date": "20 July,2024",
-          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 1"
-        },
-        {
-          "id": 2,
-          "username": "Дмитрий Кашин",
-          "mark": 4,
-          "date": "18 July,2024",
-          "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 2"
-        }
-      ]
+      "id": 1,
+      "productId": 19,
+      "username": "Павел Мурахтанов",
+      "mark": 5,
+      "date": "20 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 1"
+    },
+    {
+      "id": 2,
+      "productId": 19,
+      "username": "Дмитрий Кашин",
+      "mark": 4,
+      "date": "18 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 2"
+    },
+    {
+      "id": "32d38f60-4dd8-4967-a4ae-8c5284d82dc4",
+      "text": "Средний отзыв от админа",
+      "mark": 3,
+      "date": "July 23, 2024",
+      "username": "Павел Мурахтанов",
+      "productId": 19
+    },
+    {
+      "id": 3,
+      "productId": 19,
+      "username": "Павел Мурахтанов",
+      "mark": 5,
+      "date": "20 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 1"
+    },
+    {
+      "id": 4,
+      "productId": 19,
+      "username": "Дмитрий Кашин",
+      "mark": 4,
+      "date": "18 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 2"
+    },
+    {
+      "id": "32d38f6134-4dd8-4967-a4ae-8c5284d82dc4",
+      "text": "Средний отзыв от админа",
+      "mark": 3,
+      "date": "July 23, 2024",
+      "username": "Павел Мурахтанов",
+      "productId": 19
+    },
+    {
+      "id": 5,
+      "productId": 19,
+      "username": "Павел Мурахтанов",
+      "mark": 5,
+      "date": "20 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 1"
+    },
+    {
+      "id": 6,
+      "productId": 19,
+      "username": "Дмитрий Кашин",
+      "mark": 4,
+      "date": "18 July,2024",
+      "text": "Тестовый текст для отзыва на Apple iPhone 14 Pro от пользователя с ID: 2"
+    },
+    {
+      "id": "32d38f60-4dd8-4967-a4ae-8c5224d84d82dc4",
+      "text": "Средний отзыв от админа",
+      "mark": 3,
+      "date": "July 23, 2024",
+      "username": "Павел Мурахтанов",
+      "productId": 19
     }
   ]
 }

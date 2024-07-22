@@ -20,7 +20,7 @@ export const ReviewsSlice = createSlice({
         state.error = undefined;
       })
       .addCase(FetchReviews.fulfilled, (state, action) => {
-        state.reviewsData = action.payload?.reviewsList;
+        state.reviewsData = action.payload;
         state.isLoading = false;
       })
       .addCase(FetchReviews.rejected, (state) => {
@@ -32,7 +32,9 @@ export const ReviewsSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(AddNewReview.fulfilled, (state, action) => {
-        state.reviewsData = action.payload?.reviewsList;
+        state.reviewsData = state.reviewsData
+          ? [...state.reviewsData, action.payload]
+          : [action.payload];
         state.isLoading = false;
       })
       .addCase(AddNewReview.rejected, (state) => {

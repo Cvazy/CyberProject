@@ -33,24 +33,16 @@ export const AddNewReview = createAsyncThunk(
 
       const fullUsername = `${responseProfileData.data[0].name} ${responseProfileData.data[0].surname}`;
 
-      const responseReviewData = await axios.get(
-        `${serverUrl}/reviews/${productId}`,
-      );
-
       const newReview = {
         id: uuidv4(),
         text,
         mark,
         date: formattedDate,
         username: fullUsername,
+        productId,
       };
 
-      responseReviewData.data.reviewsList.push(newReview);
-
-      const response = await axios.put(
-        `${serverUrl}/reviews/${productId}`,
-        responseReviewData.data,
-      );
+      const response = await axios.post(`${serverUrl}/reviews`, newReview);
 
       return response.data;
     } catch (error: any) {
