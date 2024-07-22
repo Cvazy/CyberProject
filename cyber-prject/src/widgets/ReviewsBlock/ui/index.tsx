@@ -52,9 +52,9 @@ export const ReviewsBlock = ({ productId }: ReviewsProps) => {
                 {t("Reviews")}
               </p>
 
-              <FetchErrorWrap isLoading={isLoading}>
-                <ReviewStatistic productId={productId} />
+              <ReviewStatistic productId={productId} />
 
+              <FetchErrorWrap isLoading={isLoading}>
                 <AddReviewOnProduct productId={productId} />
 
                 <div className={"flex flex-col items-center gap-4 w-full"}>
