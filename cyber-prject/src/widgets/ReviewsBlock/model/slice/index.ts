@@ -1,6 +1,7 @@
 import { ReviewsListData } from "../types";
 import { createSlice } from "@reduxjs/toolkit";
 import { FetchReviews } from "../services";
+import { AddNewReview } from "features/AddReviewOnProduct";
 
 const initialReviewsState: ReviewsListData = {
   reviewsData: undefined,
@@ -25,6 +26,17 @@ export const ReviewsSlice = createSlice({
       .addCase(FetchReviews.rejected, (state) => {
         state.isLoading = false;
         state.error = "An error occurred while uploading reviews";
+      })
+
+      .addCase(AddNewReview.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(AddNewReview.fulfilled, (state, action) => {
+        state.reviewsData = action.payload?.reviewsList;
+        state.isLoading = false;
+      })
+      .addCase(AddNewReview.rejected, (state) => {
+        state.isLoading = false;
       });
   },
 });

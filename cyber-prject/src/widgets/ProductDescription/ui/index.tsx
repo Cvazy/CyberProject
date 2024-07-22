@@ -64,7 +64,7 @@ export const ProductDescription = () => {
 
                     <img
                       src={ArrowIcon}
-                      className={`${openStatus ? "rotate-180" : ""}`}
+                      className={`${openStatus ? "rotate-180" : ""} select-none`}
                       alt={"Arrow"}
                       loading={"lazy"}
                       draggable={"false"}

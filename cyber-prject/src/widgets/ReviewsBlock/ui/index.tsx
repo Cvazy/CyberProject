@@ -7,6 +7,8 @@ import {
 import { useEffect } from "react";
 import { FetchReviews } from "../model";
 import { FetchErrorWrap } from "shared/FetchErrorWrap";
+import { ReviewsList } from "./ReviewsList";
+import { AddReviewOnProduct } from "features";
 
 interface ReviewsProps {
   productId?: number;
@@ -20,7 +22,7 @@ export const ReviewsBlock = ({ productId }: ReviewsProps) => {
     dispatch(FetchReviews({ productId: productId || NaN }));
   }, [dispatch, productId]);
 
-  const { isLoading, error } = useAppSelector((state) => state.reviewsReducer);
+  const { isLoading } = useAppSelector((state) => state.reviewsReducer);
 
   return (
     <div className={"flex justify-center w-full px-4"}>
@@ -36,8 +38,12 @@ export const ReviewsBlock = ({ productId }: ReviewsProps) => {
                 {t("Reviews")}
               </p>
 
-              <FetchErrorWrap error={error} isLoading={isLoading}>
+              <FetchErrorWrap isLoading={isLoading}>
                 <ReviewStatistic />
+
+                <AddReviewOnProduct productId={productId} />
+
+                <ReviewsList />
               </FetchErrorWrap>
             </div>
           </div>

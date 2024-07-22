@@ -41,5 +41,9 @@
   "Good": "Хорошо",
   "Average": "Средне",
   "Below Average": "Ниже среднего",
-  "Poor": "Плохо"
+  "Poor": "Плохо",
+  "Send": "Отправить",
+  "Cancel": "Назад",
+  "Leave Comment": "Оставить комментарий",
+  "Your feedback": "Ваш отзыв"
 }

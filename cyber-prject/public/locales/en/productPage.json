@@ -41,5 +41,9 @@
   "Good": "Good",
   "Average": "Average",
   "Below Average": "Below Average",
-  "Poor": "Poor"
+  "Poor": "Poor",
+  "Send": "Send",
+  "Cancel": "Cancel",
+  "Leave Comment": "Leave Comment",
+  "Your feedback": "Your feedback"
 }

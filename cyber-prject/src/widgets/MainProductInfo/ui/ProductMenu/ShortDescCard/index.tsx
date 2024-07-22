@@ -14,7 +14,7 @@ export const ShortDescCard = ({ name, value, iconUrl }: ShortDescCardProps) => {
     >
       <div className={"flex items-center justify-start gap-1 w-full"}>
         <img
-          className={"block w-6 h-6"}
+          className={"select-none block w-6 h-6"}
           src={iconUrl}
           alt={name}
           loading={"lazy"}

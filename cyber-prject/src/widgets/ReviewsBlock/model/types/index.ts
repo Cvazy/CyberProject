@@ -1,6 +1,6 @@
 export interface ReviewBlockTypes {
-  id: number;
-  userId: number;
+  id: number | string;
+  username: string;
   mark: number;
   date: string;
   text: string;

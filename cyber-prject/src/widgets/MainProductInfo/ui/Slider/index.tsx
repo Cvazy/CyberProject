@@ -43,7 +43,7 @@ export const ProductSlider = () => {
             <img
               src={el}
               alt={name}
-              className={"max-h-[516px]"}
+              className={"select-none max-h-[516px]"}
               loading={"lazy"}
               draggable={false}
             />
@@ -82,7 +82,7 @@ export const ProductSlider = () => {
               src={el}
               alt={name}
               className={
-                "max-w-[75px] max-h-[66px] min-h-[auto] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
+                "max-w-[75px] select-none max-h-[66px] min-h-[auto] sm:max-h-[76px] md:max-h-[86px] lg:max-h-[96px]"
               }
               loading={"lazy"}
               draggable={false}

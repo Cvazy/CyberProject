@@ -33,7 +33,7 @@ export const AverageValue = () => {
             </p>
 
             <img
-              className={"w-10 h-10"}
+              className={"select-none w-10 h-10"}
               src={GoldStar}
               alt={"Star"}
               loading={"lazy"}

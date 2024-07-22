@@ -41,8 +41,12 @@ button {
   cursor: pointer;
 }
 
-input {
+input, textarea {
   outline: none;
+}
+
+textarea {
+  transition-property: none;
 }
 
 @layer components {

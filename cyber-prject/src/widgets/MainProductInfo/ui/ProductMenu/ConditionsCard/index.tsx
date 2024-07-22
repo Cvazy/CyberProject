@@ -13,7 +13,7 @@ export const ConditionsCard = ({ icon, name, value }: ConditionsCardProps) => {
     <div className={"flex flex-col items-center gap-4 w-full xl:flex-row"}>
       <div className={"bg-[#F6F6F6] p-4 rounded-xl"}>
         <img
-          className={"min-w-6 min-h-6 max-w-6 max-h-6"}
+          className={"select-none min-w-6 min-h-6 max-w-6 max-h-6"}
           src={icon}
           alt={name}
           loading={"lazy"}
