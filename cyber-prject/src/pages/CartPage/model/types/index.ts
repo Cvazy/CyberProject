@@ -25,4 +25,5 @@ export interface CartSchema {
   promoCodeError?: string;
   priceSum?: PriceSum;
   fullAddress?: string;
+  shipment?: string;
 }

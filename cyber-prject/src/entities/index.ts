@@ -7,3 +7,4 @@ export * from "./FooterBanner";
 export * from "./ReviewItem";
 export * from "./Address";
 export * from "./PhoneInput";
+export * from "./Shipment";

@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "shared/ui";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { DeliveryAddress } from "features";
+import { DeliveryAddress, ShipmentMethod } from "features";
 
 const CheckoutPage = () => {
   const { t } = useTranslation("checkoutPage");
@@ -41,6 +41,8 @@ const CheckoutPage = () => {
 
               <div className={"pt-12 pb-16 w-full"}>
                 {currentStep === 1 && <DeliveryAddress />}
+
+                {currentStep === 2 && <ShipmentMethod />}
               </div>
             </div>
 

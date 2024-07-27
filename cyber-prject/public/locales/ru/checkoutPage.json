@@ -21,5 +21,9 @@
   "Please fill in your address title": "Пожалуйста, укажите название вашего адреса",
   "Please fill in your full address": "Пожалуйста, укажите ваш полный адрес",
   "Please fill in your phone number": "Пожалуйста, укажите ваш номер телефона",
-  "An error occurred while adding the address": "Произошла ошибка при добавлении адреса"
+  "An error occurred while adding the address": "Произошла ошибка при добавлении адреса",
+  "Shipment Method": "Способ отгрузки",
+  "Get your delivery as soon as possible": "Получите вашу доставку как можно скорее",
+  "Free": "Бесплатно",
+  "Regularly shipment": "Регулярная отгрузка"
 }

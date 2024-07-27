@@ -5,3 +5,4 @@ export * from "./SearchedProducts";
 export * from "./AddReviewOnProduct";
 export * from "./DeliveryAddress";
 export * from "./AddNewAddress";
+export * from "./ShipmentMethod";

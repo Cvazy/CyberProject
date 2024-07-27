@@ -16,6 +16,7 @@ const initialCartState: CartSchema = {
   promoCodeError: "",
   priceSum: undefined,
   fullAddress: undefined,
+  shipment: undefined,
 };
 
 export const CartSlice = createSlice({
@@ -28,6 +29,10 @@ export const CartSlice = createSlice({
 
     setFullAddressData(state, action) {
       state.fullAddress = action.payload;
+    },
+
+    setShipmentPrice(state, action) {
+      state.shipment = action.payload;
     },
   },
   extraReducers: (builder) => {
