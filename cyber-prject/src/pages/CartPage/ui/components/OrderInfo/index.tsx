@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { ESTIMATED_TAX_PERCENT, DELIVERY_PERCENT } from "shared/const";
-import { Button, Input } from "../../../../../shared/ui";
+import { Button, Input } from "shared/ui";
 import React, { useCallback, useState } from "react";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../../../app/providers/StoreProvider/hooks";
-import { FetchPromoCode } from "../../../model";
-import { FetchErrorWrap } from "../../../../../shared/FetchErrorWrap";
+} from "app/providers/StoreProvider/hooks";
+import { cartActions, FetchPromoCode } from "../../../model";
+import { FetchErrorWrap } from "shared/FetchErrorWrap";
+import { useNavigate } from "react-router-dom";
 
 interface OrderInfoProps {
   subtotalSum: number;
@@ -20,6 +21,7 @@ export const OrderInfo = ({ subtotalSum }: OrderInfoProps) => {
   );
 
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const [promoCodeValue, setPromoCodeValue] = useState("");
 
@@ -37,6 +39,19 @@ export const OrderInfo = ({ subtotalSum }: OrderInfoProps) => {
     setPromoCodeValue(value);
   }, []);
 
+  const onClickCheckout = () => {
+    dispatch(
+      cartActions.setCheckoutData({
+        estimatedTax,
+        promoCode,
+        deliveryPrice,
+        subtotalSum,
+        totalSum,
+      }),
+    );
+    navigate("/checkout?step=1");
+  };
+
   return (
     <div
       className={"rounded-xl h-fit border border-solid border-[#EBEBEB] w-full"}
@@ -53,7 +68,7 @@ export const OrderInfo = ({ subtotalSum }: OrderInfoProps) => {
             {t("Order Summary")}
           </p>
 
-          <form className={"flex flex-col gap-14 w-full"}>
+          <div className={"flex flex-col gap-14 w-full"}>
             <div className={"flex flex-col gap-6 w-full"}>
               <div className={"flex flex-col items-start gap-2 w-full"}>
                 <label
@@ -181,14 +196,14 @@ export const OrderInfo = ({ subtotalSum }: OrderInfoProps) => {
             </div>
 
             <Button
-              type={"submit"}
               className={
                 "h-56 w-full bg-black text-white border-black px-6 flex-grow hover:bg-white hover:text-black"
               }
+              onClick={onClickCheckout}
             >
               {t("Checkout")}
             </Button>
-          </form>
+          </div>
         </div>
       </FetchErrorWrap>
     </div>

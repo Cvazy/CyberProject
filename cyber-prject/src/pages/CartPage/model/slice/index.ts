@@ -1,5 +1,5 @@
-import { CartSchema } from "../types";
-import { createSlice } from "@reduxjs/toolkit";
+import { CartSchema, PriceSum } from "../types";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {
   FetchUserCart,
   FetchProductsInfo,
@@ -14,12 +14,22 @@ const initialCartState: CartSchema = {
   error: "",
   promoCodeSale: undefined,
   promoCodeError: "",
+  priceSum: undefined,
+  fullAddress: undefined,
 };
 
 export const CartSlice = createSlice({
   name: "Product",
   initialState: initialCartState,
-  reducers: {},
+  reducers: {
+    setCheckoutData(state, action: PayloadAction<PriceSum>) {
+      state.priceSum = action.payload;
+    },
+
+    setFullAddressData(state, action) {
+      state.fullAddress = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(FetchUserCart.pending, (state) => {
@@ -85,5 +95,7 @@ export const CartSlice = createSlice({
       });
   },
 });
+
+export const { actions: cartActions } = CartSlice;
 
 export const { reducer: cartReducer } = CartSlice;

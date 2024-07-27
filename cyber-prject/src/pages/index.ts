@@ -9,3 +9,4 @@ export * from "./OrderPage";
 export * from "./ProductPage";
 export * from "./ProfileBlock";
 export * from "./WishlistBlock";
+export * from "./CheckoutPage";

@@ -9,10 +9,20 @@ export interface CartElementType {
   quantity: number;
 }
 
+export interface PriceSum {
+  subtotalSum: number;
+  estimatedTax: number;
+  deliveryPrice?: number;
+  promoCode?: number;
+  totalSum: number;
+}
+
 export interface CartSchema {
   isLoading: boolean;
   error?: string;
   promoCodeIsLoading: boolean;
   promoCodeSale?: number;
   promoCodeError?: string;
+  priceSum?: PriceSum;
+  fullAddress?: string;
 }

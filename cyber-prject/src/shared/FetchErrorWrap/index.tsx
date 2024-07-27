@@ -4,7 +4,7 @@ import { LoaderTwister } from "../ui/Loader/LoaderTwister";
 
 type FetchErrorWrapProps = {
   children: ReactNode;
-  isLoading: boolean;
+  isLoading?: boolean;
   error?: string;
 };
 

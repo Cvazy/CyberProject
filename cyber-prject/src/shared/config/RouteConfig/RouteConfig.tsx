@@ -4,6 +4,7 @@ import {
   AuthPage,
   CartPage,
   CatalogPage,
+  CheckoutPage,
   ContactPage,
   MainPage,
   OrderPage,
@@ -15,6 +16,7 @@ export enum AppRoutes {
   ABOUT = "about",
   CONTACT = "contacts",
   CART = "cart",
+  CHECKOUT = "checkout",
   MAIN = "main",
   LOGIN = "login",
   REGISTER = "register",
@@ -30,6 +32,7 @@ export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.LOGIN]: "/login",
   [AppRoutes.REGISTER]: "/register",
   [AppRoutes.CATALOG]: "/catalog",
+  [AppRoutes.CHECKOUT]: "/checkout",
   [AppRoutes.PRODUCT]: "/product",
   [AppRoutes.CART]: "/cart",
   [AppRoutes.ORDER]: "/order",
@@ -93,5 +96,10 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.CONTACT]: {
     path: RoutePaths.contacts,
     element: <ContactPage />,
+  },
+
+  [AppRoutes.CHECKOUT]: {
+    path: RoutePaths.checkout,
+    element: <CheckoutPage />,
   },
 };

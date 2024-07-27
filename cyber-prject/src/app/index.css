@@ -67,6 +67,17 @@ textarea {
   }
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 .swiper-pagination-bullet {
   @apply !w-[30px] !h-[7px] !rounded-md !bg-[#e7e7e7]
 }
@@ -106,4 +117,30 @@ textarea {
 
 .product_slider .swiper-wrapper {
   @apply !flex items-center justify-between sm:justify-center gap-4 md:gap-5 lg:flex-col xl:gap-6 lg:justify-start
+}
+
+.add_address {
+  @apply flex justify-center relative w-full
+}
+
+.add_address:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: calc(50% + 12px);
+  right: 0;
+  border: 1px dashed black;
+}
+
+.add_address:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: calc(50% + 12px);
+  left: 0;
+  border: 1px dashed black;
+}
+
+.textarea_not_corner::-webkit-resizer {
+  display: none;
 }

@@ -5,3 +5,5 @@ export * from "./PageError";
 export * from "./ProductCard";
 export * from "./FooterBanner";
 export * from "./ReviewItem";
+export * from "./Address";
+export * from "./PhoneInput";

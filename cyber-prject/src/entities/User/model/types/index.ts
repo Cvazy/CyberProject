@@ -3,6 +3,14 @@ export interface CartItem {
   quantity: number;
 }
 
+export interface AddressItem {
+  id: string | number;
+  title: string;
+  full_address: string;
+  phone: string;
+  placeStatus: string;
+}
+
 export interface User {
   id?: number;
   username?: string;
@@ -10,8 +18,11 @@ export interface User {
   surname?: string;
   patronymic?: string;
   cart?: CartItem[];
+  addresses?: AddressItem[];
 }
 
 export interface UserSchema {
   authData?: User;
+  isLoading?: boolean;
+  error?: string;
 }

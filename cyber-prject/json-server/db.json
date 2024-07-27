@@ -15,13 +15,23 @@
           "3": 3
         },
         {
-          "31": 1
+          "22": 1
+        }
+      ],
+      "addresses": [
+        {
+          "id": 1,
+          "title": "New edit address",
+          "full_address": "city City 7712, street Street, house 10",
+          "phone": "8 (996) 729 15 56",
+          "placeStatus": "Home"
         },
         {
-          "31": 1
-        },
-        {
-          "22": 2
+          "id": 2,
+          "title": "New Second address",
+          "full_address": "city City2, street Street2, house 20 fjkhnfdjknfk fjdnfdkjnfdkfj ndfkjnfdkjn ",
+          "phone": "8 (937) 999 51 91",
+          "placeStatus": "Office"
         }
       ]
     },
