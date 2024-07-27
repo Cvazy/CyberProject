@@ -17,7 +17,7 @@ export const Shipment = ({
 
   return (
     <div
-      className={`bg-white rounded-xl border border-solid border-[#D1D1D8] w-full ${isSelected ? "" : "opacity-50"}`}
+      className={`bg-white rounded-xl border border-solid border-[#D1D1D8] cursor-pointer w-full ${isSelected ? "" : "opacity-50"}`}
       onClick={onSelect}
     >
       <div className={"flex items-center justify-between gap-6 p-6 w-full"}>

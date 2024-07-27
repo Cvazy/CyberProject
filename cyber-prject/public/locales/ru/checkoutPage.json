@@ -25,5 +25,11 @@
   "Shipment Method": "Способ отгрузки",
   "Get your delivery as soon as possible": "Получите вашу доставку как можно скорее",
   "Free": "Бесплатно",
-  "Regularly shipment": "Регулярная отгрузка"
+  "Regularly shipment": "Регулярная отгрузка",
+  "Summary": "Итого",
+  "Subtotal": "Подытог",
+  "Total": "Итог",
+  "Estimated Tax": "Предполагаемый налог",
+  "Estimated shipping & Handling": "Предполагаемая стоимость доставки и обработки",
+  "Discount code / Promo code": "Скидочный код / Промокод"
 }

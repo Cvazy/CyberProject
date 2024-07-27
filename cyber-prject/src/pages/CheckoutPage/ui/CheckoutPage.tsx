@@ -1,4 +1,4 @@
-import { CheckoutNavigation } from "widgets";
+import { CheckoutNavigation, OrderSummary } from "widgets";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "shared/ui";
 import React, { useState } from "react";
@@ -43,6 +43,8 @@ const CheckoutPage = () => {
                 {currentStep === 1 && <DeliveryAddress />}
 
                 {currentStep === 2 && <ShipmentMethod />}
+
+                {currentStep === 3 && <OrderSummary />}
               </div>
             </div>
 

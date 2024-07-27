@@ -18,7 +18,7 @@ export const ShipmentMethod = () => {
     setSelectedShipmentMethod(price);
 
     if (price !== "Free") {
-      dispatch(cartActions.setShipmentPrice(price));
+      dispatch(cartActions.setShipmentPrice(price.slice(1)));
     } else {
       dispatch(cartActions.setShipmentPrice("0"));
     }
