@@ -6,6 +6,7 @@ import {
   FetchFeaturedProducts,
   ProductSchema,
 } from "../index";
+import { FetchPaginationProducts } from "pages/CatalogPage/model";
 
 const initialProductListState: ProductList = {
   productsData: [],
@@ -91,6 +92,19 @@ export const ProductListSlice = createSlice({
       .addCase(FetchFeaturedProducts.rejected, (state) => {
         state.isLoading = false;
         state.error = "An unknown error has occurred";
+      })
+
+      .addCase(FetchPaginationProducts.pending, (state) => {
+        state.isLoading = true;
+        state.error = undefined;
+      })
+      .addCase(FetchPaginationProducts.fulfilled, (state, action) => {
+        state.productsData = action.payload;
+        state.isLoading = false;
+      })
+      .addCase(FetchPaginationProducts.rejected, (state) => {
+        state.isLoading = false;
+        state.error = "An error occurred while loading the goods";
       });
   },
 });

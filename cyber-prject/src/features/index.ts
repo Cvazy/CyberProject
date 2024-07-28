@@ -6,3 +6,5 @@ export * from "./AddReviewOnProduct";
 export * from "./DeliveryAddress";
 export * from "./AddNewAddress";
 export * from "./ShipmentMethod";
+export * from "./CatalogFilter";
+export * from "./Pagination";
