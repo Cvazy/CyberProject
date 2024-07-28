@@ -14,8 +14,6 @@ export const OrderSummary = () => {
     finalTotalPrice = priceSum?.totalSum + Number(shipment);
   }
 
-  console.log(shipment);
-
   return (
     <div className={"flex justify-center w-full"}>
       <div

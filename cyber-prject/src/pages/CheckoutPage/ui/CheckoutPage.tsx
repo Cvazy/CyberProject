@@ -1,9 +1,10 @@
 import { CheckoutNavigation, OrderSummary } from "widgets";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "shared/ui";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { DeliveryAddress, ShipmentMethod } from "features";
+import { useAppSelector } from "../../../app/providers/StoreProvider/hooks";
 
 const CheckoutPage = () => {
   const { t } = useTranslation("checkoutPage");
@@ -14,6 +15,8 @@ const CheckoutPage = () => {
   const checkoutStep = searchParams.get("step");
 
   const [currentStep, setCurrentStep] = useState(Number(checkoutStep));
+
+  const { priceSum } = useAppSelector((state) => state.cartReducer);
 
   const handleBackBtn = () => {
     if (currentStep !== 1) {
@@ -30,6 +33,12 @@ const CheckoutPage = () => {
       navigate(`/checkout?step=${newStep}`);
     }
   };
+
+  useEffect(() => {
+    if (!priceSum) {
+      navigate("/cart");
+    }
+  }, [navigate, priceSum]);
 
   return (
     <div className={"w-full h-auto"}>
