@@ -5,13 +5,12 @@ import {
   useAppDispatch,
   useAppSelector,
 } from "app/providers/StoreProvider/hooks";
-import {
-  FetchPaginationProducts,
-  FetchProductQnt,
-} from "pages/CatalogPage/model";
+import { FetchProductQnt } from "pages/CatalogPage/model";
 import { FetchErrorWrap } from "shared/FetchErrorWrap";
 import { ProductCard } from "../../../entities";
 import { useLocation } from "react-router-dom";
+import { SortedSelect } from "pages/CatalogPage/ui/SortedSelect";
+import { ProductListActions } from "../../ProductList";
 
 export const CatalogList = () => {
   const { t } = useTranslation("catalogPage");
@@ -29,24 +28,23 @@ export const CatalogList = () => {
   const user = useAppSelector((state) => state.userReducer.authData);
   const userId = user?.id;
 
-  const { productsData, isLoading, error } = useAppSelector(
+  const { productsData, isLoading, error, sorted } = useAppSelector(
     (state) => state.ProductListReducer,
   );
 
   useEffect(() => {
-    dispatch(
-      FetchPaginationProducts({
-        currentPage: currentPage!,
-        userId: userId || NaN,
-      }),
-    );
-  }, [dispatch, userId, currentPage]);
-
-  useEffect(() => {
-    dispatch(FetchProductQnt()).then((response) =>
-      setProductsCount(response.payload.length),
-    );
-  }, [dispatch]);
+    dispatch(FetchProductQnt()).then((response) => {
+      dispatch(
+        ProductListActions.setSortedProductList({
+          sortedValue: sorted || "",
+          currentPage: currentPage!,
+          userId: userId || NaN,
+          productsList: response.payload,
+        }),
+      );
+      setProductsCount(response.payload.length);
+    });
+  }, [dispatch, sorted, currentPage, userId]);
 
   return (
     <FetchErrorWrap error={error} isLoading={isLoading}>
@@ -69,6 +67,10 @@ export const CatalogList = () => {
               >
                 {productsCount}
               </p>
+            </div>
+
+            <div className={"hidden sm:block"}>
+              <SortedSelect />
             </div>
           </div>
 

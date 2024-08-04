@@ -1,2 +1,2 @@
-export * from "./FetchProducts";
+export * from "./FetchPaginationProducts";
 export * from "./FetchProductQnt";

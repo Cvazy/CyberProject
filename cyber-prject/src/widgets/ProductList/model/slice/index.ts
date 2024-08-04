@@ -7,11 +7,13 @@ import {
   ProductSchema,
 } from "../index";
 import { FetchPaginationProducts } from "pages/CatalogPage/model";
+import mergeFavoriteProducts from "../utils/mergeFavoriteProducts";
 
 const initialProductListState: ProductList = {
   productsData: [],
   isLoading: false,
   error: "",
+  sorted: undefined,
 };
 
 export const ProductListSlice = createSlice({
@@ -50,6 +52,41 @@ export const ProductListSlice = createSlice({
       localStorage.setItem(
         `favoriteProducts-${userId}`,
         JSON.stringify(favoriteProducts),
+      );
+    },
+
+    setSortedValue(state, action: PayloadAction<string>) {
+      state.sorted = action.payload;
+    },
+
+    setSortedProductList(
+      state,
+      action: PayloadAction<{
+        sortedValue?: string;
+        currentPage: string;
+        userId: number;
+        productsList: ProductSchema[];
+      }>,
+    ) {
+      const limit = 9;
+      let sortedProducts = [...action.payload.productsList];
+
+      if (action.payload.sortedValue === "A-Z") {
+        sortedProducts.sort((a: ProductSchema, b: ProductSchema) =>
+          a.name.localeCompare(b.name),
+        );
+      } else if (action.payload.sortedValue === "Z-A") {
+        sortedProducts.sort((a: ProductSchema, b: ProductSchema) =>
+          b.name.localeCompare(a.name),
+        );
+      }
+
+      const start = (+action.payload.currentPage - 1) * limit;
+      const paginatedProducts = sortedProducts.slice(start, start + limit);
+
+      state.productsData = mergeFavoriteProducts(
+        paginatedProducts,
+        action.payload.userId,
       );
     },
   },

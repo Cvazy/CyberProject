@@ -1,4 +1,7 @@
 {
   "Selected Products": "Выбранные продукты",
-  "An error occurred while loading the goods": "При загрузке товаров произошла ошибка"
+  "An error occurred while loading the goods": "При загрузке товаров произошла ошибка",
+  "Sorted By": "Сортировать",
+  "Alphabetically A-Z": "По алфавиту A-Z",
+  "Alphabetically Z-A": "По алфавиту Z-A"
 }

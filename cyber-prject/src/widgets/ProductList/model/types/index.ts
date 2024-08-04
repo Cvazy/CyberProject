@@ -12,4 +12,5 @@ export interface ProductList {
   productsData: ProductSchema[];
   isLoading: boolean;
   error?: string;
+  sorted?: string;
 }
