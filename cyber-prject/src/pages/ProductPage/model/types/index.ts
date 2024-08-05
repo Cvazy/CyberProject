@@ -22,6 +22,7 @@ export interface IProductData {
   deviceFamily?: string;
   color: string;
   modification?: string;
+  brand?: string;
   shortProperties?: ShortPropertiesProps[];
   imagesGallery?: string[];
   details: ProductDescriptionTypes;

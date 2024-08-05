@@ -1,6 +1,6 @@
 import { Pagination } from "features";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   useAppDispatch,
   useAppSelector,
@@ -23,14 +23,17 @@ export const CatalogList = () => {
 
   const dispatch = useAppDispatch();
 
-  let [productsCount, setProductsCount] = useState(0);
-
   const user = useAppSelector((state) => state.userReducer.authData);
   const userId = user?.id;
 
-  const { productsData, isLoading, error, sorted } = useAppSelector(
-    (state) => state.ProductListReducer,
-  );
+  const {
+    productsData,
+    isLoading,
+    error,
+    sorted,
+    selectedFilterSettings,
+    productsCount,
+  } = useAppSelector((state) => state.ProductListReducer);
 
   useEffect(() => {
     dispatch(FetchProductQnt()).then((response) => {
@@ -40,11 +43,11 @@ export const CatalogList = () => {
           currentPage: currentPage!,
           userId: userId || NaN,
           productsList: response.payload,
+          selectedFilterSettings: selectedFilterSettings || [],
         }),
       );
-      setProductsCount(response.payload.length);
     });
-  }, [dispatch, sorted, currentPage, userId]);
+  }, [dispatch, sorted, currentPage, userId, selectedFilterSettings]);
 
   return (
     <FetchErrorWrap error={error} isLoading={isLoading}>
@@ -82,7 +85,10 @@ export const CatalogList = () => {
         </div>
 
         <div className={"flex justify-center w-full"}>
-          <Pagination productsQnt={productsCount} currentPage={currentPage} />
+          <Pagination
+            productsQnt={productsCount || 0}
+            currentPage={currentPage}
+          />
         </div>
       </div>
     </FetchErrorWrap>

@@ -8,3 +8,4 @@ export * from "./ReviewItem";
 export * from "./Address";
 export * from "./PhoneInput";
 export * from "./Shipment";
+export * from "./FilterSelect";

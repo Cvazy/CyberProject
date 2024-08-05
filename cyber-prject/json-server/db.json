@@ -248,6 +248,7 @@
       "deviceFamily": "AirPods Max",
       "color": "#E8E8E8",
       "modification": null,
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -265,6 +266,7 @@
       "deviceFamily": "Apple Watch Series 9 GPS 41mm",
       "color": "#E8E8E8",
       "modification": "41mm",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -281,6 +283,7 @@
       "deviceFamily": "Blackmagic Pocket Cinema Camera 6k",
       "color": "#E8E8E8",
       "modification": "6k",
+      "brand": "Blackmagic",
       "shortProperties": [
         {}
       ],
@@ -297,6 +300,7 @@
       "deviceFamily": "Galaxy Z Fold5",
       "color": "#000",
       "modification": "256GB",
+      "brand": "Samsung",
       "shortProperties": [
         {}
       ],
@@ -313,6 +317,7 @@
       "deviceFamily": "Galaxy Buds FE",
       "color": "#525154",
       "modification": null,
+      "brand": "Samsung",
       "shortProperties": [
         {}
       ],
@@ -329,6 +334,7 @@
       "deviceFamily": "Apple iPad 9 10.2",
       "color": "#E8E8E8",
       "modification": "64GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -344,6 +350,7 @@
       "deviceFamily": "Apple iPad 9 10.2",
       "color": "#E8E8E8",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -360,6 +367,7 @@
       "deviceFamily": "Apple iPad 9 10.2",
       "color": "#E8E8E8",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -375,6 +383,7 @@
       "deviceFamily": "Apple iPad 9 10.2",
       "color": "#E8E8E8",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -390,6 +399,7 @@
       "deviceFamily": "Apple iPhone 11",
       "color": "#E8E8E8",
       "modification": "64GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -409,6 +419,7 @@
       "deviceFamily": "Apple iPhone 11",
       "color": "#E8E8E8",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -428,6 +439,7 @@
       "deviceFamily": "Apple iPhone 11",
       "color": "#E8E8E8",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -446,6 +458,7 @@
       "deviceFamily": "Apple iPhone 11",
       "color": "#E8E8E8",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -465,6 +478,7 @@
       "deviceFamily": "Apple iPhone 13 mini",
       "color": "#F7DBD5",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -484,8 +498,33 @@
       "deviceFamily": "Apple iPhone 13 mini",
       "color": "#F7DBD5",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
-        {}
+        {
+          "name": "Screen size",
+          "value": "5.4",
+          "iconUrl": "https://i.ibb.co/tLYsxj3/1.png"
+        },
+        {
+          "name": "CPU",
+          "value": "Apple A15",
+          "iconUrl": "https://i.ibb.co/Zf4hP2Z/2.png"
+        },
+        {
+          "name": "Main camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/gSQfjWs/4.png"
+        },
+        {
+          "name": "Front-camera",
+          "value": "12 MP",
+          "iconUrl": "https://i.ibb.co/ckgtVNg/5.png"
+        },
+        {
+          "name": "Battery capacity",
+          "value": "2438 mAh",
+          "iconUrl": "https://i.ibb.co/12wVdyJ/6.png"
+        }
       ],
       "imagesGallery": [
         "https://i.ibb.co/ncPh6fs/78xu98ur6rycxcfns4f0ba95gviqg1rw.jpg",
@@ -503,6 +542,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#000",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -680,6 +720,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#000",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -858,6 +899,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#000",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1035,6 +1077,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#000",
       "modification": "1TB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1214,6 +1257,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E1B000",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1389,6 +1433,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E1B000",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1563,6 +1608,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E1B000",
       "modification": "1TB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1738,6 +1784,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#781DBC",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -1914,6 +1961,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#781DBC",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2089,6 +2137,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#781DBC",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2265,6 +2314,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#781DBC",
       "modification": "1TB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2441,6 +2491,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E8E8E8",
       "modification": "128GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2617,6 +2668,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E8E8E8",
       "modification": "256GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2793,6 +2845,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E8E8E8",
       "modification": "512GB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -2970,6 +3023,7 @@
       "deviceFamily": "Apple iPhone 14 Pro",
       "color": "#E8E8E8",
       "modification": "1TB",
+      "brand": "Apple",
       "shortProperties": [
         {
           "name": "Screen size",
@@ -3147,6 +3201,7 @@
       "deviceFamily": "Samsung Galaxy Watch6 Classic 47mm",
       "color": "#000",
       "modification": "47mm",
+      "brand": "Samsung",
       "shortProperties": [
         {}
       ],
@@ -3163,6 +3218,7 @@
       "deviceFamily": "Playstation 5",
       "color": "#000",
       "modification": null,
+      "brand": "Playstation",
       "shortProperties": [
         {}
       ],
@@ -3179,6 +3235,7 @@
       "deviceFamily": "Apple Vision Pro",
       "color": "#000",
       "modification": null,
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -3195,6 +3252,7 @@
       "deviceFamily": "MacBook Pro",
       "color": "#E8E8E8",
       "modification": "M1",
+      "brand": "Apple",
       "shortProperties": [
         {}
       ],
@@ -3211,6 +3269,7 @@
       "deviceFamily": "Samsung Galaxy 21S Ultra",
       "color": "#000",
       "modification": null,
+      "brand": "Samsung",
       "shortProperties": [
         {}
       ],

@@ -3,5 +3,11 @@
   "An error occurred while loading the goods": "An error occurred while loading the goods",
   "Sorted By": "Sorted By",
   "Alphabetically A-Z": "Alphabetically A-Z",
-  "Alphabetically Z-A": "Alphabetically Z-A"
+  "Alphabetically Z-A": "Alphabetically Z-A",
+  "Screen size": "Screen size",
+  "CPU": "CPU",
+  "Number of Cores": "Number of Cores",
+  "Main camera": "Main camera",
+  "Front-camera": "Front-camera",
+  "Battery capacity": "Battery capacity"
 }

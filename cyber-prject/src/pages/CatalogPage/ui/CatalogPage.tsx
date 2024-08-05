@@ -11,7 +11,9 @@ const CatalogPage = () => {
               "flex flex-col items-start gap-6 w-full lg:flex-row xl:gap-8"
             }
           >
-            <CatalogFilter />
+            <div className={"hidden w-full max-w-64 lg:block"}>
+              <CatalogFilter />
+            </div>
 
             <CatalogList />
           </div>
