@@ -72,7 +72,7 @@ export const CatalogList = () => {
               </p>
             </div>
 
-            <div className={"hidden sm:block"}>
+            <div className={"hidden lg:block"}>
               <SortedSelect />
             </div>
           </div>
