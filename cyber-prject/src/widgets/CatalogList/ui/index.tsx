@@ -8,18 +8,26 @@ import {
 import { FetchProductQnt } from "pages/CatalogPage/model";
 import { FetchErrorWrap } from "shared/FetchErrorWrap";
 import { ProductCard } from "../../../entities";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { SortedSelect } from "pages/CatalogPage/ui/SortedSelect";
 import { ProductListActions } from "../../ProductList";
 
 export const CatalogList = () => {
   const { t } = useTranslation("catalogPage");
 
+  const navigate = useNavigate();
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   let currentPage = searchParams.get("page");
 
   currentPage = currentPage || "1";
+
+  useEffect(() => {
+    if (!currentPage || !+currentPage) {
+      navigate("/not_found");
+    }
+  }, [navigate, currentPage]);
 
   const dispatch = useAppDispatch();
 

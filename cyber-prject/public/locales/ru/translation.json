@@ -65,5 +65,7 @@
   "The password was filled in incorrectly. The maximum password length is 30 characters": "Неверно заполнен пароль. Максимальная длина пароля 30 символов",
   "Please repeat the password": "Пожалуйста, повторите пароль",
   "Passwords don't match": "Пароли не совпадают",
-  "Nothing was found": "Ничего не найдено"
+  "Nothing was found": "Ничего не найдено",
+  "Page not found": "Страница не найдена",
+  "Main page": "Главная"
 }

@@ -32,7 +32,7 @@ export const AverageValue = ({ allReviewsData }: AverageValueProps) => {
                 "text-[56px] leading-none text-black text-center font-medium w-full"
               }
             >
-              {averageValue}
+              {allReviewsData?.length ? averageValue : 0}
             </p>
 
             <img

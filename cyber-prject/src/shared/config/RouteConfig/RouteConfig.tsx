@@ -10,6 +10,7 @@ import {
   OrderPage,
   ProductPage,
   LkPage,
+  NotFoundPage,
 } from "pages";
 
 export enum AppRoutes {
@@ -25,6 +26,7 @@ export enum AppRoutes {
   ORDER = "order",
   PROFILE = "profile",
   WISHLIST = "wishlist",
+  NOT_FOUND = "not_found",
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
@@ -40,6 +42,7 @@ export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.WISHLIST]: "/wishlist",
   [AppRoutes.ABOUT]: "/about",
   [AppRoutes.CONTACT]: "/contacts",
+  [AppRoutes.NOT_FOUND]: "*",
 };
 
 export const RouteConfig: Record<AppRoutes, RouteProps> = {
@@ -101,5 +104,10 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.CHECKOUT]: {
     path: RoutePaths.checkout,
     element: <CheckoutPage />,
+  },
+
+  [AppRoutes.NOT_FOUND]: {
+    path: RoutePaths.not_found,
+    element: <NotFoundPage />,
   },
 };

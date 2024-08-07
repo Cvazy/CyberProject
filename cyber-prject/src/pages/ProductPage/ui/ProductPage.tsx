@@ -41,6 +41,12 @@ const ProductPage = () => {
     );
   }, [dispatch, productData?.deviceFamily]);
 
+  useEffect(() => {
+    if (!productId || !+productId) {
+      navigate("/not_found");
+    }
+  }, [navigate, productId]);
+
   return (
     <div className={"w-full h-auto"}>
       <div className={"flex justify-center w-full h-full"}>
